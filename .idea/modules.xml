@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/algorithm-analysis/data-structures-and-algorithm-analysis.iml" filepath="$PROJECT_DIR$/algorithm-analysis/data-structures-and-algorithm-analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm-geekbang/geekbang.iml" filepath="$PROJECT_DIR$/algorithm-geekbang/geekbang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm-interview/interview.iml" filepath="$PROJECT_DIR$/algorithm-interview/interview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm-luban/luban.iml" filepath="$PROJECT_DIR$/algorithm-luban/luban.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm-nowcoder/nowcoder.iml" filepath="$PROJECT_DIR$/algorithm-nowcoder/nowcoder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm-practice/practice.iml" filepath="$PROJECT_DIR$/algorithm-practice/practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm-nowcoder/sword-refer-to-offer/sword-refer-to-offer.iml" filepath="$PROJECT_DIR$/algorithm-nowcoder/sword-refer-to-offer/sword-refer-to-offer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm-classic/the-classic-algorithm-fundamental.iml" filepath="$PROJECT_DIR$/algorithm-classic/the-classic-algorithm-fundamental.iml" />
+    </modules>
+  </component>
+</project>
