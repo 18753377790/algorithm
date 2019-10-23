@@ -22,10 +22,10 @@ package com.algorithm.luban.day02;
 public class MyLinkedList {
 
     //供外部外部看到的大小，这里使用了障眼法
-    int size;
+    private int size;
 
     //表示头结点，链表的头结点最重要，找到了头结点就能找到下面的结点
-    Node head = null;
+    private Node head = null;
 
     /**
      * 返回集合大小

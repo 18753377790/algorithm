@@ -28,28 +28,3 @@ public class BinaryTreeDepth {
 
     }
 }
-
-/**
- * 二叉树节点类
- */
-class TreeNode{
-
-    /**
-     * 二叉树节点的值
-     */
-    private int val = 0;
-
-    /**
-     * 二叉树左节点
-     */
-    TreeNode left = null;
-
-    /**
-     * 二叉树右节点
-     */
-    TreeNode right = null;
-
-    public TreeNode(int val){
-        this.val = val;
-    }
-}

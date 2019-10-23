@@ -14,14 +14,20 @@ package com.algorithm.luban.day03;
  */
 public class MyQueue {
 
-    //队列集合中的元素个数（队列的大小）
-    int size;
+    /**
+     * 队列集合中的元素个数（队列的大小）
+     */
+    private int size;
 
-    //头结点（队列的头部）
-    Node head;
+    /**
+     * 头结点（队列的头部）
+     */
+    private Node head;
 
-    //尾结点（队列的尾部）
-    Node foot;
+    /**
+     * 尾结点（队列的尾部）
+     */
+    private Node foot;
 
     /**
      * 获取队列的大小

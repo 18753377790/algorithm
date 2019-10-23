@@ -131,7 +131,7 @@ public class FourOperations {
      * @param value
      * @return
      */
-    public static MyQueue getQueue(String value){
+    private static MyQueue getQueue(String value){
         MyQueue queue = new MyQueue();
         char[] chars = value.toCharArray();
         for (int i = 0; i < chars.length; i++) {
@@ -148,7 +148,7 @@ public class FourOperations {
      * @param num2
      * @return
      */
-    public static int operation(int num1, String symbol, int num2){
+    private static int operation(int num1, String symbol, int num2){
         switch (symbol){
             case "+":
                 return num1 + num2;
@@ -169,7 +169,7 @@ public class FourOperations {
      * @param s2
      * @return
      */
-    public static boolean getLevel(String s1, String s2){
+    private static boolean getLevel(String s1, String s2){
         return map.get(s1) > map.get(s2);
     }
 }

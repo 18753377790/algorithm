@@ -19,11 +19,15 @@ package com.algorithm.luban.day02;
  */
 public class MyArrayList {
 
-    //ArrayList初始数组默认初始容量是10，这里设置为4
-    Object[] objs = new Object[4];
+    /**
+     * ArrayList初始数组默认初始容量是10，这里设置为4
+     */
+    private Object[] objs = new Object[4];
 
-    //供外部外部看到的大小，这里使用了障眼法
-    int size = 0;
+    /**
+     * 供外部外部看到的大小，这里使用了障眼法
+     */
+    private int size = 0;
 
     /**
      * 返回集合大小
@@ -94,11 +98,11 @@ public class MyArrayList {
      * @param index
      */
     public void removeAt(int index){
-        //这里不能判断数组的长度，否则隐藏数组的算法就会暴露，索引从1开始，长度从0开始，索引不能等于长度
+        // 这里不能判断数组的长度，否则隐藏数组的算法就会暴露，索引从1开始，长度从0开始，索引不能等于长度
         if (index >= size){
             System.out.println("超出范围");
         }
-        //将后面的数据向前移动，最后一个数据没必要删除，因为size变了访问不到，如果添加数据，会将最后原有的覆盖
+        // 将后面的数据向前移动，最后一个数据没必要删除，因为size变了访问不到，如果添加数据，会将最后原有的覆盖
         for (int i = index+1; i < size; i++) {
             objs[i - 1] = objs[i];
         }

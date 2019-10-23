@@ -22,7 +22,7 @@ public class LinkedListTest {
         list.removeAt(2);
 
         //遍历输出集合
-        for (int i = 0; i <list.getSize(); i++) {
+        for (int i = 0; i < list.getSize(); i++) {
             System.out.println(list.get(i));
         }
     }

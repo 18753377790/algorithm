@@ -10,15 +10,19 @@ package com.algorithm.luban.day02;
  */
 public class Node {
 
+    /**
+     * 数据
+     */
+    private Object value;
+
+    /**
+     * 下一个结点的地址
+     */
+    private Node next;
+
     public Node(Object value) {
         this.value = value;
     }
-
-    //数据
-    Object value;
-
-    //下一个结点的地址
-    Node next;
 
     public Object getValue() {
         return value;

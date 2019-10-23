@@ -19,14 +19,14 @@ public class SymmetricBinaryTree {
 
         if (pRoot == null)
             return false;
-        if (pRoot.left ==null && pRoot.right ==null)
+        if (pRoot.left == null && pRoot.right == null)
             return true;
 
         if (pRoot.left.val == pRoot.right.val){
 
         }
 
-        return true;
+        return false;
     }
 
     public static void main(String[] args) {

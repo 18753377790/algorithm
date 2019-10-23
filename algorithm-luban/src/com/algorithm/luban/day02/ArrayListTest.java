@@ -24,13 +24,13 @@ public class ArrayListTest {
 
         //对集合中元素进行循环遍历删除时，要从后往前循环
         for (int i = 0; i < list.getSize(); i++) {
-            if ((int)list.get(i)%2 == 0){
+            if ((int)list.get(i) % 2 == 0){
                 list.removeAt(i);
             }
         }
 
         //遍历输出集合
-        for (int i = 0; i <list.getSize(); i++) {
+        for (int i = 0; i < list.getSize(); i++) {
             System.out.println(list.get(i));
         }
     }

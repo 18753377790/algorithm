@@ -14,11 +14,15 @@ package com.algorithm.luban.day03;
  */
 public class MyStack {
 
-    //栈集合的元素个数（栈的大小）
-    int size;
+    /**
+     * 栈集合的元素个数（栈的大小）
+     */
+    private int size;
 
-    //表示头元素（头结点）
-    Node head = null;
+    /**
+     * 表示头元素（头结点）
+     */
+    private Node head = null;
 
     /**
      * 获取栈的大小
