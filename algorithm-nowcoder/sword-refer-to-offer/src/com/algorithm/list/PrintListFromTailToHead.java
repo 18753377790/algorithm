@@ -12,11 +12,13 @@ import java.util.ArrayList;
  */
 public class PrintListFromTailToHead {
 
-    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+    /**
+     *
+     * @param listNode
+     * @return
+     */
+    private ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         return null;
     }
 }
 
-class ListNode{
-
-}

@@ -8,15 +8,20 @@ package com.algorithm.knowledge.transfer.ability;
  * @Date 2019/8/20 21:47
  * @Version 1.0
  */
-public class TreeDepth {
+public class BinaryTreeDepth {
 
     /**
-     *
+     * 二叉树深度
+     * 如果该树只有一个结点，它的深度为1.如果根节点只有左子树没有右子树，那么树的深度为左子树的深度加1；
+     * 同样，如果只有右子树没有左子树，那么树的深度为右子树的深度加1。如果既有左子树也有右子树，那该树的深度就是左子树和右子树的最大值加1.
      * @param root
      * @return
      */
     private int TreeDepth(TreeNode root) {
-        return 0;
+        if (root == null) {
+            return 0;
+        }
+        return Math.max(TreeDepth(root.left), TreeDepth(root.right)) + 1;
     }
 
     public static void main(String[] args) {
@@ -37,14 +42,14 @@ class TreeNode{
     /**
      * 二叉树左节点
      */
-    private TreeNode left = null;
+    TreeNode left = null;
 
     /**
      * 二叉树右节点
      */
-    private TreeNode right = null;
+    TreeNode right = null;
 
-    public TreeNode(){
-
+    public TreeNode(int val){
+        this.val = val;
     }
 }
