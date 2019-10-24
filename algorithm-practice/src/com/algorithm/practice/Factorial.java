@@ -10,11 +10,10 @@ import java.util.Scanner;
  * @Version 1.0
  */
 public class Factorial {
-    private static Scanner scanner;
     
     public static void main(String[] args) {
         System.out.println("请输入一个整数：");
-        scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         long num = scanner.nextLong();
         long n=0;
         for (long i = 1; i <= num; i++) {
@@ -26,9 +25,9 @@ public class Factorial {
     /**
      * 阶乘会溢出，如果想算大的阶乘，用BigInteger或者数组做为容器进行运算
      * @param nums
-     * @return
+     * @return nums
      */
-    public static long doFactorial(long nums){
+    private static long doFactorial(long nums){
         if (nums<=0){
             System.out.println("ERROR");
             return 0;

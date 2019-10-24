@@ -18,21 +18,20 @@ import java.util.Scanner;
  * @Version 1.0
  */
 public class Switch {
-    private static Scanner scanner;
 
     public static void main(String[] args) {
         System.out.println("请输入分数：");
-        scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int score = scanner.nextInt();
-        int level = 0;
+        int level;
         if (score>100 || score<0){
             System.out.println("无效的分数，请输入0~100之间的整数！");
             return;
-        }else if (score >=85 && score <=100){
+        }else if (score >= 85){
             level = 1;
-        }else if (score >=70 && score <=84){
+        }else if (score >= 70){
             level = 2;
-        }else if (score >=60 && score <=69){
+        }else if (score >= 60){
             level = 3;
         }else {
             level = 4;

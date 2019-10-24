@@ -10,15 +10,15 @@ import java.util.Scanner;
  * @Version 1.0
  */
 public class IntegerSum {
-    private static Scanner scanner;
+
     public static void main(String[] args) {
         System.out.println("请输入一个整数：");
-        scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
         int n = 0;
-        while (num>0){
-          n = n + num%10;
-          num = num/10;
+        while (num > 0){
+          n = n + num % 10;
+          num = num / 10;
         }
         System.out.println(n);
     }

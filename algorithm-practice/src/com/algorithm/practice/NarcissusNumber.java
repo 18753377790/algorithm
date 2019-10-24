@@ -8,8 +8,8 @@ package com.algorithm.practice;
  * @Version 1.0
  */
 public class NarcissusNumber {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         for (int i = 100; i < 1000; i++) {
             int a = i/100;
             int b = i/10-10*a;

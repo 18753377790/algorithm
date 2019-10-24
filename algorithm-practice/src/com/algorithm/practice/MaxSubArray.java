@@ -21,7 +21,7 @@ public class MaxSubArray {
 
     }
 
-    public static void findMaxSubArraySum() {
+    private static void findMaxSubArraySum() {
         //sum为子数组的和
         int sum = 0;
         //max为子数组的最大和

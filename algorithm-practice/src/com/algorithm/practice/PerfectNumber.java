@@ -15,13 +15,13 @@ public class PerfectNumber {
         System.out.println("请输入一个整数：");
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
-        if (num<=0){
+        if (num <= 0){
             System.out.println("请输入正整数！");
             return;
         }
         int sum = 0;
         for (int i = 1; i < num; i++) {
-            if (num%i==0){
+            if (num % i == 0){
                 sum += i;
             }
         }
