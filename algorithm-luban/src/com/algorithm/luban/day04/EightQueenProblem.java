@@ -56,9 +56,9 @@ public class EightQueenProblem {
      * 验证此位置是否可以放置皇后
      * 八个方向，其中左右方向不能放，
      * 左下，右下，下方没有放皇后
-     * @param row
-     * @param col
-     * @return
+     * @param row 行
+     * @param col 列
+     * @return 放没放皇后
      */
     private static boolean check(int row, int col){
         // 循环验证正上方（行数变小，列数不变，当前位置从下往上循环）
@@ -81,7 +81,7 @@ public class EightQueenProblem {
 
     /**
      * 循环遍历当前行，在当前行位置放置皇后
-     * @param row
+     * @param row 行
      */
     private static void play(int row){
         // 遍历当前行的所有单元格，一行8个格子

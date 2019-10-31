@@ -13,16 +13,16 @@ public class MonteCarlo {
 
     /**
      * 蒙卡列罗算法
-     * @param n
-     * @return
+     * @param n 点数
+     * @return π
      */
-    private static Double monteCarlo(Integer n){
-        Double x,y,Pi;
-        Integer sum = 0;
+    private static double monteCarlo(int n){
+        double x,y,Pi;
+        int sum = 0;
         for (int i = 0; i < n; i++) {
             x = Math.random();
             y = Math.random();
-            if ((x*x+y*y) <= 1){
+            if ((x * x + y * y) <= 1){
                 sum++;
             }
         }
@@ -34,8 +34,8 @@ public class MonteCarlo {
         System.out.println("蒙特卡罗概率算法计算π");
         Scanner scanner = new Scanner(System.in);
         System.out.println("输入点的数量：");
-        Integer n = scanner.nextInt();
-        Double Pi = monteCarlo(n);
+        int n = scanner.nextInt();
+        double Pi = monteCarlo(n);
         System.out.println("π=" + Pi);
     }
 }

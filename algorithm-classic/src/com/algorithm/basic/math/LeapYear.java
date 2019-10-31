@@ -13,8 +13,8 @@ public class LeapYear {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Integer year = scanner.nextInt();
-        Integer result = LeapYear.leapYear(year);
+        int year = scanner.nextInt();
+        int result = LeapYear.leapYear(year);
         if (result == 1) {
             System.out.println("是闰年");
         }else{
@@ -24,10 +24,10 @@ public class LeapYear {
 
     /**
      * 判断闰年的方法
-     * @param year
-     * @return
+     * @param year 年份
+     * @return 1是闰年，0不是闰年
      */
-    private static Integer leapYear(Integer year){
+    private static int leapYear(int year){
         if ((year % 400 == 0) || (year % 4 == 0) && (year % 100 != 0)){
             return 1;
         }else {

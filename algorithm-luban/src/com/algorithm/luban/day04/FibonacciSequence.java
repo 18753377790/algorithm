@@ -34,8 +34,8 @@ public class FibonacciSequence {
     /**
      * 执行递归的方法
      * n=第几个位置，返回类型就是第n个位置的斐波那契数列的值
-     * @param n
-     * @return
+     * @param n 第几个位置
+     * @return 数列值
      */
     private static int doFactorial(int n){
         if (n == 1 || n == 2){

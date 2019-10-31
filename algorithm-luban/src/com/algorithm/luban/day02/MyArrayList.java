@@ -1,5 +1,7 @@
 package com.algorithm.luban.day02;
 
+import java.util.Arrays;
+
 /**
  * @Author 李非凡
  * @Description:
@@ -39,7 +41,7 @@ public class MyArrayList {
 
     /**
      * 向集合中添加元素
-     * @param value
+     * @param value 待添加的元素
      */
     public void add(Object value){
         //添加前需要判断数组是否还有位置可以存放数据
@@ -88,9 +90,10 @@ public class MyArrayList {
     public void clear(){
         //将大小归零是最快的清除方法，用户再往里面添加数据会覆盖原有数据，跟硬盘删除和格式化原理一样
         size = 0;
-        for (int i = 0; i < objs.length; i++) {
-            objs[i] = null;
-        }
+//        for (int i = 0; i < objs.length; i++) {
+//            objs[i] = null;
+//        }
+        Arrays.fill(objs, null);
     }
 
     /**
@@ -103,9 +106,10 @@ public class MyArrayList {
             System.out.println("超出范围");
         }
         // 将后面的数据向前移动，最后一个数据没必要删除，因为size变了访问不到，如果添加数据，会将最后原有的覆盖
-        for (int i = index+1; i < size; i++) {
-            objs[i - 1] = objs[i];
-        }
+//        for (int i = index+1; i < size; i++) {
+//            objs[i - 1] = objs[i];
+//        }
+        if (size - index + 1 >= 0) System.arraycopy(objs, index + 1, objs, index + 1 - 1, size - index + 1);
         size--;
     }
 }

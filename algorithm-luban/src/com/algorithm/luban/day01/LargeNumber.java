@@ -28,13 +28,13 @@ public class LargeNumber {
         array[array.length-3] = 5;
         int num = 34;
 
-        //1.计算每一位的结果
+        // 1.计算每一位的结果
         for (int i = 0; i < array.length; i++) {
             array[i] = array[i]*num;
         }
-        //2.对每一位进行进位和留位（i不能等于0，防止数组下标越界）
+        // 2.对每一位进行进位和留位（i不能等于0，防止数组下标越界）
         for (int i = array.length-1; i > 0; i--) {
-            //先进后留
+            // 先进后留
             array[i-1] += array[i]/10;
             array[i] %= 10;
         }

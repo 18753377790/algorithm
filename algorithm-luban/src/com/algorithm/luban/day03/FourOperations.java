@@ -30,12 +30,12 @@ public class FourOperations {
     /**
      * 存储运算符的有限级别（key是运算符，value是优先级别）
      */
-    private static HashMap<String, Integer> map = new HashMap<String, Integer>();
+    private static HashMap<String, Integer> map = new HashMap<>();
 
     /**
      * 不要将代码都写在main方法里面
      * 而是要符合面向对象编程思想，将常用的代码封装成一个方法
-     * @param args
+     * @param args 数组
      */
     public static void main(String[] args) {
         map.put("(", 0);
@@ -128,14 +128,17 @@ public class FourOperations {
 
     /**
      * 将公式拆分成单独的内容并存储到队列中
-     * @param value
-     * @return
+     * @param value 计算公式
+     * @return 装有公式的队列
      */
     private static MyQueue getQueue(String value){
         MyQueue queue = new MyQueue();
         char[] chars = value.toCharArray();
-        for (int i = 0; i < chars.length; i++) {
-            queue.EnQueue(chars[i]);
+//        for (int i = 0; i < chars.length; i++) {
+//            queue.EnQueue(chars[i]);
+//        }
+        for (char aChar : chars) {
+            queue.EnQueue(aChar);
         }
         return queue;
     }
@@ -143,10 +146,10 @@ public class FourOperations {
     /**
      * 进行数学运算（开闭原则：添加开放，对修改关闭。就是说扩展一个新的功能不要去修改源代码）
      * 简单工厂模式--》反射工厂模式
-     * @param num1
-     * @param symbol
-     * @param num2
-     * @return
+     * @param num1 数1
+     * @param symbol 运算符
+     * @param num2 数2
+     * @return 计算结果
      */
     private static int operation(int num1, String symbol, int num2){
         switch (symbol){
@@ -165,9 +168,9 @@ public class FourOperations {
 
     /**
      * 返回2个运算符的级别比较：s1符号是否大于s2符号
-     * @param s1
-     * @param s2
-     * @return
+     * @param s1 运算符1
+     * @param s2 运算符2
+     * @return 比较结果
      */
     private static boolean getLevel(String s1, String s2){
         return map.get(s1) > map.get(s2);

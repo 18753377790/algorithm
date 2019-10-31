@@ -23,9 +23,9 @@ package com.algorithm.geekbang.basic.sort;
 public class SelectSort {
 
     /**
-     *
-     * @param a
-     * @param n
+     * 选择排序，a 表示数组，n 表示数组大小
+     * @param a 待排序的数组
+     * @param n 数组的长度
      */
     public void selectSort(int[] a, int n){
 

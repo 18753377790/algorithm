@@ -27,10 +27,10 @@ public class QuickSort {
 
     /**
      * 返回结果表示标杆数所在的位置，标杆数一般是第一个数
-     * @param ints
-     * @param start
-     * @param end
-     * @return
+     * @param ints 待排序的数组
+     * @param start 开始位置
+     * @param end 结束位置
+     * @return 中间位置
      */
     private static int sortUnit(int[] ints, int start, int end){
         // 获取标杆数
@@ -66,9 +66,9 @@ public class QuickSort {
 
     /**
      * 快速排序
-     * @param ints
-     * @param start
-     * @param end
+     * @param ints 待排序的数组
+     * @param start 开始位置
+     * @param end 结束位置
      */
     private static void sort(int[] ints, int start, int end){
 

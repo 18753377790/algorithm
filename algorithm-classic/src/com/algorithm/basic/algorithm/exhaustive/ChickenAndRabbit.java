@@ -14,24 +14,24 @@ public class ChickenAndRabbit {
     /**
      * 鸡的数量
      */
-    private static Integer chicken = 0;
+    private static int chicken = 0;
 
     /**
      * 兔子的数量
      */
-    private static Integer rabbit = 0;
+    private static int rabbit = 0;
 
     /**
      * 穷举算法
-     * @param head
-     * @param foot
-     * @return
+     * @param head 鸡头数
+     * @param foot 鸡腿数
+     * @return 鸡数
      */
-    private static Integer exhaustive(Integer head,Integer foot){
-        Integer re=0;
+    private static int exhaustive(int head, int foot){
+        int re = 0;
         for (int i = 0; i <= head; i++) {
-            Integer j = head - i;
-            if (i*2 + j*4 == foot){
+            int j = head - i;
+            if (i * 2 + j * 4 == foot){
                 re = 1;
                 chicken = i;
                 rabbit = j;
@@ -44,13 +44,13 @@ public class ChickenAndRabbit {
         System.out.println("穷举法求解鸡兔同笼问题:");
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入头数：");
-        Integer head = scanner.nextInt();
+        int head = scanner.nextInt();
         System.out.println("请输入脚数：");
-        Integer foot = scanner.nextInt();
+        int foot = scanner.nextInt();
 
-        Integer re = exhaustive(head,foot);
+        int re = exhaustive(head,foot);
         if (re == 1){
-            System.out.println("鸡有"+chicken+"只,兔有"+rabbit+"只");
+            System.out.println("鸡有" + chicken + "只,兔有" + rabbit + "只");
         }else {
             System.out.println("此题无解");
         }

@@ -27,7 +27,7 @@ public class BinaryTree {
 
     /**
      * 向二叉树中添加元素
-     * @param value
+     * @param value 待添加的元素值
      */
     public void add(int value){
         Node newNode = new Node(value);
@@ -70,7 +70,7 @@ public class BinaryTree {
     /**
      * 递归遍历二叉树（顺序二叉树）
      * 输出语句只能同时存在一条，要么是前序遍历，要么是中序遍历，要么是后序遍历
-     * @param node
+     * @param node 结点
      */
     private void showNode(Node node){
         // 前序遍历

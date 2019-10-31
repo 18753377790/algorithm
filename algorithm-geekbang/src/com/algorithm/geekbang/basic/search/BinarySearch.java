@@ -41,10 +41,10 @@ public class BinarySearch {
 
     /**
      * 查找最后一个值等于给定值的元素
-     * @param a
-     * @param n
-     * @param value
-     * @return
+     * @param a 待查找的数组
+     * @param n 数组的长度
+     * @param value 待查找的数值
+     * @return -1为未找到
      */
     private int binarySearch2(int[] a, int n, int value){
         return 0;
@@ -52,10 +52,10 @@ public class BinarySearch {
 
     /**
      * 查找第一个大于等于给定值的元素
-     * @param a
-     * @param n
-     * @param value
-     * @return
+     * @param a 待查找的数组
+     * @param n 数组的长度
+     * @param value 待查找的数值
+     * @return -1为未找到
      */
     private int binarySearch3(int[] a, int n, int value){
         return 0;
@@ -63,10 +63,10 @@ public class BinarySearch {
 
     /**
      * 查找最后一个小于等于给定值的元素
-     * @param a
-     * @param n
-     * @param value
-     * @return
+     * @param a 待查找的数组
+     * @param n 数组的长度
+     * @param value 待查找的数值
+     * @return -1为未找到
      */
     private int binarySearch4(int[] a, int n, int value){
         return 0;
