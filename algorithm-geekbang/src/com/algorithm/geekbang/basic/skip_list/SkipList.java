@@ -1,13 +1,13 @@
-package com.algorithm.geekbang.basic.tree;
+package com.algorithm.geekbang.basic.skip_list;
 
 /**
  * @Author 李非凡
  * @Description:
- * 红黑树
- * @Date 2019/10/15 0:02
+ * 跳表
+ * @Date 2019/10/27 12:53
  * @Version 1.0
  */
-public class RedBlackTree {
+public class SkipList {
 
     public static void main(String[] args) {
 

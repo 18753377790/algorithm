@@ -10,7 +10,7 @@ package com.algorithm.geekbang.basic.sort;
  */
 public class MergeSort {
 
-    public void merge(){
+    public void merge(int[] a){
 
     }
 

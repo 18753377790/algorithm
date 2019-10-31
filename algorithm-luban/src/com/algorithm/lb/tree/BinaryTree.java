@@ -51,15 +51,15 @@ public class BinaryTree {
 
     }
 
-    public void print(Node node){
+    private void print(Node node){
         System.out.print(node.getData());
     }
 
     /**
      * 前序遍历 根结点（输出） 左子树 右子树
-     * @param root
+     * @param root 结点
      */
-    public void preOrder(Node root){
+    private void preOrder(Node root){
         print(root);
         if (!Objects.isNull(root.getLeftNode()))
             preOrder(root.getLeftNode());
@@ -69,9 +69,9 @@ public class BinaryTree {
 
     /**
      * 中序遍历  左子树 根结点（输出） 右子树
-     * @param root
+     * @param root 结点
      */
-    public void inOrder(Node root){
+    private void inOrder(Node root){
         if (!Objects.isNull(root.getLeftNode()))
             inOrder(root.getLeftNode());
         print(root);
@@ -81,9 +81,9 @@ public class BinaryTree {
 
     /**
      * 后序遍历 左子树 右子树 根结点（输出）
-     * @param root
+     * @param root 结点
      */
-    public void postOrder(Node root){
+    private void postOrder(Node root){
         if (!Objects.isNull(root.getLeftNode()))
             postOrder(root.getLeftNode());
         if (!Objects.isNull(root.getRightNode()))

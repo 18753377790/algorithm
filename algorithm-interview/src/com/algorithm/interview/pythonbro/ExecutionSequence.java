@@ -37,8 +37,8 @@ public class ExecutionSequence {
         System.out.println("ping");
     }
 
-    /**
-     * 静态代码块，类加载的时候执行，最先执行
+    /*
+      静态代码块，类加载的时候执行，最先执行
      */
     static {
         System.out.println("ball");

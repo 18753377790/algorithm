@@ -14,13 +14,13 @@ public class RingShiftLeftString {
 
     /**
      * 字符串左移
-     * @param oldStr
-     * @param position
-     * @return
+     * @param oldStr 左移前的字符串
+     * @param position 移动的距离
+     * @return str
      */
     private static String ringShiftLeftString(String oldStr, int position){
         // 左移的字符串
-        String str1 = oldStr.substring(oldStr.length() - position, oldStr.length());
+        String str1 = oldStr.substring(oldStr.length() - position);
         // 原字符串去掉左移字符串之后的字符串
         String str2 = oldStr.substring(0, oldStr.length() - position);
         return str1 + str2;

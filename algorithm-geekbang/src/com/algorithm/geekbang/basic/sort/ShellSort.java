@@ -2,7 +2,9 @@ package com.algorithm.geekbang.basic.sort;
 
 /**
  * @Author 李非凡
- * @Description:TODE
+ * @Description:
+ * 希尔排序
+ *
  * @Date 2019/9/30 23:36
  * @Version 1.0
  */

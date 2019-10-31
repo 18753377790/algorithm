@@ -23,16 +23,15 @@ public class ListSort {
     private static List<Integer> sSorted = new LinkedList<>();
 
     /**
-     *
-     * @param e
+     * 添加元素
+     * @param e 待添加的元素
      */
     private static void addElement(int e){
         boolean b = sSorted.isEmpty();
         if (!b){
-            int size =sSorted.size();
             int location = 0;
-            for (int i = 0; i < size; i++) {
-                if (sSorted.get(i)<e){
+            for (Integer integer : sSorted) {
+                if (integer < e) {
                     location += 1;
                 }
             }

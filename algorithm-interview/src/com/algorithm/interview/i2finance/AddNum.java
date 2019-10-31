@@ -26,9 +26,9 @@ public class AddNum {
 
     /**
      * 累加的方法
-     * @param a
-     * @param n
-     * @return
+     * @param a 加数
+     * @param n 几个数相加
+     * @return sum
      */
     private static int addNum(int a, int n){
         // 累加器

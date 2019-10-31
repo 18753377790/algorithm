@@ -41,8 +41,8 @@ public class SumOfTwoPrimeNumbers {
 
     /**
      * 判断正整数是否是质数的方法
-     * @param num
-     * @return
+     * @param num 待判断的数字
+     * @return flag
      */
     private static boolean isPrime(int num){
         // 1既不是质数也不是合数

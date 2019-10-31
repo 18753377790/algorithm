@@ -14,9 +14,9 @@ public class RemoveSubString {
 
     /**
      * 字符串消除
-     * @param oldStr
-     * @param delStr
-     * @return
+     * @param oldStr 主串
+     * @param delStr 模式串
+     * @return str
      */
     private static String removeSubString(String oldStr, String delStr){
         return null;
