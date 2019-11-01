@@ -19,17 +19,21 @@ public class AbnormalJumpFloor {
      * 2->2 11 2
      * 3->4 111 12 21 3
      * 4->8 1111 112 121 211 22 13 31 4
-     * 5->15 11111 1112 1121 1211 122 2111 212 221 113 131 311 14 41 23 5
-     * 6->
+     * 5->16 11111 1112 1121 1211 2111 122 212 221 113 131 311 23 32 14 41 5
+     * 6->32
+     * F(n) = 2*F(n-1)
+     * F(n) = 2^(n-1)
      * @param target 台阶的阶数
      * @return 跳法数
      */
     private int JumpFloorII(int target) {
-        return 0;
+        return (int) Math.pow(2, target - 1);
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int target = scanner.nextInt();
+        AbnormalJumpFloor jumpFloor = new AbnormalJumpFloor();
+        System.out.println(jumpFloor.JumpFloorII(target));
     }
 }
