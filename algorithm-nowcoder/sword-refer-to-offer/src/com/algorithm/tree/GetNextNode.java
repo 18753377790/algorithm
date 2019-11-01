@@ -13,4 +13,8 @@ public class GetNextNode {
     public TreeLinkNode GetNext(TreeLinkNode pNode) {
         return null;
     }
+
+    public static void main(String[] args) {
+
+    }
 }

@@ -11,6 +11,11 @@ import java.util.ArrayList;
  */
 public class PrintBinaryTree {
 
+    /**
+     *
+     * @param pRoot 二叉树结点
+     * @return
+     */
     private ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
 
 

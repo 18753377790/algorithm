@@ -12,8 +12,8 @@ public class DeleteDuplication {
 
     /**
      * 删除重复结点
-     * @param pHead
-     * @return
+     * @param pHead 链表的结点
+     * @return 重复的结点
      */
     public ListNode deleteDuplication(ListNode pHead) {
 

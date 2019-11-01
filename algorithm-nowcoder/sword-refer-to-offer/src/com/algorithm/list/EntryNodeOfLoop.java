@@ -12,8 +12,8 @@ public class EntryNodeOfLoop {
 
     /**
      *
-     * @param pHead
-     * @return
+     * @param pHead 链表的结点
+     * @return 入口结点
      */
     public ListNode EntryNodeOfLoop(ListNode pHead) {
 
