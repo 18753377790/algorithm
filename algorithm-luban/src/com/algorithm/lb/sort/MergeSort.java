@@ -14,9 +14,9 @@ public class MergeSort {
 
     /**
      * 归并排序
-     * @param data
-     * @param left
-     * @param right
+     * @param data 待排序的数组
+     * @param left 左边第一个数的位置
+     * @param right 右边第一个数的位置
      */
     private static void mergeSort(int[] data, int left, int right){
         // 当左边的数小于右边的数时
@@ -34,10 +34,10 @@ public class MergeSort {
 
     /**
      * 合并过程
-     * @param data
-     * @param left
-     * @param middle
-     * @param right
+     * @param data 待排序的数组
+     * @param left 左边第一个数的位置
+     * @param middle 中间数的位置
+     * @param right 右边第一个数的位置
      */
     private static void merge(int[] data, int left, int middle, int right){
         // 用来保存合并后的序列，辅助我们排序

@@ -55,9 +55,9 @@ public class TwoSum {
      * 第二步：计算进位值，得到10. 如果这一步的进位值为0，那么第一步得到的值就是最终结果。
      *
      * 第三步：重复上述两步，只是相加的值变成上述两步的得到的结果2和10，得到12。
-     * @param num1
-     * @param num2
-     * @return
+     * @param num1 加数1
+     * @param num2 加数2
+     * @return 和
      */
     private int add(int num1, int num2){
         while (num2 != 0) {

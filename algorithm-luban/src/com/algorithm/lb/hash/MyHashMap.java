@@ -70,11 +70,11 @@ public class MyHashMap<K, V> {
      */
     private int size;
 
-    public MyHashMap(){
+    private MyHashMap(){
         this(DEFAULT_SIZE);
     }
 
-    public MyHashMap(int capacity) {
+    private MyHashMap(int capacity) {
         if (capacity <= 0)
             capacity = DEFAULT_SIZE;
         this.capacity = capacity;
@@ -83,10 +83,10 @@ public class MyHashMap<K, V> {
 
     /**
      * HashMap的put方法
-     * @param key
-     * @param value
+     * @param key key值
+     * @param value value值
      */
-    public void put(K key, V value){
+    private void put(K key, V value){
         // HashMap key和value都可以为null
         if (key == null)
             return;
@@ -118,10 +118,10 @@ public class MyHashMap<K, V> {
 
     /**
      * HashMap的get方法
-     * @param key
-     * @return
+     * @param key key值
+     * @return value值
      */
-    public V get(K key){
+    private V get(K key){
         // 计算hash值
         int hash = hash(key);
         // 取出对应的链表
@@ -140,8 +140,8 @@ public class MyHashMap<K, V> {
     /**
      * Hash函数
      * jdk测试出来的最优Hash算法
-     * @param key
-     * @return
+     * @param key key值
+     * @return hash值
      */
     private int hash(K key){
         int h = 0;
@@ -177,13 +177,12 @@ class Entry<K, V>{
     K key;
     // 值
     V value;
-
     // 指针，链表的指针
     Entry<K, V> next;
     // Hash冲突的个数
     int cap;
 
-    public Entry(K key, V value, Entry<K, V> next) {
+    Entry(K key, V value, Entry<K, V> next) {
         this.key = key;
         this.value = value;
         this.next = next;

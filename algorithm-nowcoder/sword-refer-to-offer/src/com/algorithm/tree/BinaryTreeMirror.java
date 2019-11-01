@@ -23,7 +23,7 @@ public class BinaryTreeMirror {
 
     /**
      * 二叉树的镜像
-     * @param root
+     * @param root 结点
      */
     private void Mirror(TreeNode root) {
         if (root == null)

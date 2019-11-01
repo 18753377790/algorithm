@@ -15,8 +15,8 @@ public class ReplaceSpace {
     /**
      * 将StringBuffer转换为String然后调用String类的replace()方法，
      * 前面的是要替换的字符串，后面的是替换的字符串
-     * @param str
-     * @return
+     * @param str 要改变的字符串
+     * @return 改完的字符串
      */
     private String replaceSpace(StringBuffer str){
 //        return str.toString().replace(" ","%20");

@@ -41,9 +41,9 @@ public class QuickSort {
      *
      * 10 28 16
      * 50 90 100 80
-     * @param data
-     * @param left
-     * @param right
+     * @param data 待排序的数组
+     * @param left 左边第一个数的位置
+     * @param right 右边第一个数的位置
      */
     private static void quickSort(int[] data, int left, int right){
         // 从左边找的位置

@@ -15,9 +15,9 @@ public class Factorial {
         System.out.println("请输入一个整数：");
         Scanner scanner = new Scanner(System.in);
         long num = scanner.nextLong();
-        long n=0;
+        long n = 0;
         for (long i = 1; i <= num; i++) {
-            n = n+doFactorial(i);
+            n = n + doFactorial(i);
         }
         System.out.println(n);
     }
@@ -31,10 +31,10 @@ public class Factorial {
         if (nums<=0){
             System.out.println("ERROR");
             return 0;
-        }else if (nums==1 || nums==2){
+        }else if (nums == 1 || nums == 2){
             return nums;
         }else {
-            return nums*doFactorial(nums-1);
+            return nums * doFactorial(nums - 1);
         }
     }
 }
