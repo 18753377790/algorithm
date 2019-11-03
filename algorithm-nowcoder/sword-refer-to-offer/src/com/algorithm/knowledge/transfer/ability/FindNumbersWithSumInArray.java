@@ -26,10 +26,14 @@ public class FindNumbersWithSumInArray {
     private ArrayList<Integer> FindNumbersWithSum(int[] array, int sum) {
         if (array.length == 0)
             return null;
-        int product = 0;
+
+        // 较小数
         int num1 = 0;
+        // 较大数
         int num2 = 0;
-        ArrayList<Integer> list = new ArrayList<>();
+        // 两数乘积
+        int product = 0;
+
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 1; j < array.length; j++) {
@@ -46,6 +50,7 @@ public class FindNumbersWithSumInArray {
             }
         }
 
+        ArrayList<Integer> list = new ArrayList<>();
         list.add(num1);
         list.add(num2);
         return list;

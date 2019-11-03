@@ -13,26 +13,34 @@ package com.algorithm.time_efficiency;
 public class MoreThanHalfNumInArray {
 
     /**
-     *
-     * @param array
-     * @return
+     * 寻找数组中出现次数超过一半的数字
+     * @param array 传入的数组
+     * @return 数组中出现次数超过一半的数字
      */
     private int MoreThanHalfNum(int[] array) {
         if (array.length == 0)
             return 0;
-
-        int count = 0;
+        // 数组中出现次数超过一半的数字，默认为0
         int number = 0;
-        for (int i = 0; i < array.length; i++) {
-            number = i;
 
+        for (int i = 0; i < array.length; i++) {
+            // 统计数字出现的次数，每次统计都清零
+            int count = 0;
+            for (int j = i; j < array.length; j++) {
+                if (array[i] == array[j])
+                    count++;
+            }
+            if (count > array.length / 2)
+                number = array[i];
         }
-        return 0;
+        return number;
     }
 
     public static void main(String[] args) {
         int[] array = {1,2,3,2,2,2,5,4,2};
+        int[] arr = {1,2,3,2,4,2,5,2,3};
         MoreThanHalfNumInArray halfNum = new MoreThanHalfNumInArray();
         System.out.println(halfNum.MoreThanHalfNum(array));
+        System.out.println(halfNum.MoreThanHalfNum(arr));
     }
 }

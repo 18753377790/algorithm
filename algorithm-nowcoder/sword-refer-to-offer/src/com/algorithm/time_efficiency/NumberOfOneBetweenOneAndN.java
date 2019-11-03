@@ -23,6 +23,7 @@ public class NumberOfOneBetweenOneAndN {
         if (n <= 0)
             return 0;
 
+        // 统计1出现的次数
         int count = 0;
         for (int i = 1; i <= n; i++) {
             // 将数字n拆分成char数组，数组的每一位对应n的每一位
