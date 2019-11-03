@@ -8,5 +8,4 @@ package com.algorithm.geekbang.basic.graph;
  */
 public class Graph {
 
-
 }

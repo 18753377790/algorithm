@@ -7,4 +7,8 @@ package com.algorithm.geekbang.basic.graph;
  * @Version 1.0
  */
 public class BFS {
+
+    public static void main(String[] args) {
+
+    }
 }
