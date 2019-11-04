@@ -21,6 +21,9 @@ public class ContinuousSequence {
      * @return
      */
     private ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
+        if (sum <= 0)
+            return null;
+
         ArrayList list = new ArrayList();
 
         return list;

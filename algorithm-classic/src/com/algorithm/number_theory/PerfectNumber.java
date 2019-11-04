@@ -1,4 +1,4 @@
-package com.algorithm.number.theory;
+package com.algorithm.number_theory;
 
 /**
  * @Author 李非凡

@@ -24,9 +24,8 @@ public class MultiplyArray {
         if (length == 0)
             return null;
 
-        // 构建的乘积数组
+        // 构建的乘积数组B
         int[] B = new int[length];
-
         for (int i = 0; i < length; i++) {
 
         }
