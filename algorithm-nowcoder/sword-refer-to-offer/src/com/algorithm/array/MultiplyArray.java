@@ -15,6 +15,7 @@ public class MultiplyArray {
 
     /**
      * 构建乘积数组
+     * B[i] = A[0]*...*A[n-1] / A[i]
      * @param A 原数组
      * @return 构建的乘积数组
      */
@@ -23,15 +24,20 @@ public class MultiplyArray {
         if (length == 0)
             return null;
 
-        int[] array = new int[length];
+        // 构建的乘积数组
+        int[] B = new int[length];
 
+        for (int i = 0; i < length; i++) {
 
-        return array;
+        }
+
+        return B;
     }
 
     public static void main(String[] args) {
-        int[] array = {};
+        // B = {120, 60, 40, 30, 24}
+        int[] A = {1, 2 ,3 ,4 ,5};
         MultiplyArray multiplyArray = new MultiplyArray();
-        System.out.println(Arrays.toString(multiplyArray.multiply(array)));
+        System.out.println(Arrays.toString(multiplyArray.multiply(A)));
     }
 }
