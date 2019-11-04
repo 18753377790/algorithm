@@ -17,7 +17,8 @@ public class PrintMinNumberInArray {
      * @return 数组排成的最小的数
      */
     private String PrintMinNumber(int[] numbers) {
-        if (numbers.length == 0)
+        int length = numbers.length;
+        if (length == 0)
             return "";
 
         StringBuilder builder = new StringBuilder();

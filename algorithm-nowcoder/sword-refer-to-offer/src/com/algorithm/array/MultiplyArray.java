@@ -19,7 +19,11 @@ public class MultiplyArray {
      * @return 构建的乘积数组
      */
     private int[] multiply(int[] A) {
-        int[] array = new int[A.length];
+        int length = A.length;
+        if (length == 0)
+            return null;
+
+        int[] array = new int[length];
 
 
         return array;

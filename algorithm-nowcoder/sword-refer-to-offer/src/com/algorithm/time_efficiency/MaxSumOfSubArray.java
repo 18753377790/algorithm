@@ -3,6 +3,7 @@ package com.algorithm.time_efficiency;
 /**
  * @Author 李非凡
  * @Description:
+ * 连续子数组的最大和
  * HZ偶尔会拿些专业问题来忽悠那些非计算机专业的同学。
  * 今天测试组开完会后,他又发话了:在古老的一维模式识别中,常常需要计算连续子向量的最大和,当向量全为正数的时候,问题很好解决。
  * 但是,如果向量中包含负数,是否应该包含某个负数,并期望旁边的正数会弥补它呢？
@@ -14,15 +15,39 @@ package com.algorithm.time_efficiency;
 public class MaxSumOfSubArray {
 
     /**
-     *
-     * @param array
-     * @return
+     * 求连续子数组的最大和
+     * 注意，数组有可能是只有负数的数组
+     * @param array 待求和的数组
+     * @return 连续子数组的最大和
      */
     private int FindGreatestSumOfSubArray(int[] array) {
-        return 0;
+        int length = array.length;
+        if (length == 0)
+            return 0;
+        if (length == 1)
+            return array[0];
+
+        // 子数组的和
+        int sum = 0;
+        // 子数组的最大和
+        int max = 0;
+
+        for (int i = 0; i < length; i++) {
+            sum += array[i];
+
+
+        }
+
+        return max;
     }
 
     public static void main(String[] args) {
-        int[] array = {6,-3,-2,7,-15,1,2,2};
+        // 8
+        int[] array = {6, -3, -2, 7, -15, 1, 2, 2};
+        // -1
+        int[] arr = {-2,-8,-1,-5,-9};
+        MaxSumOfSubArray max = new MaxSumOfSubArray();
+        System.out.println(max.FindGreatestSumOfSubArray(array));
+        System.out.println(max.FindGreatestSumOfSubArray(arr));
     }
 }
