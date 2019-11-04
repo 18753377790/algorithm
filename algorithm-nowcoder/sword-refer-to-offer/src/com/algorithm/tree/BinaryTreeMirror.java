@@ -3,6 +3,7 @@ package com.algorithm.tree;
 /**
  * @Author 李非凡
  * @Description:
+ * 二叉树的镜像
  * 操作给定的二叉树，将其变换为源二叉树的镜像。
  * 二叉树的镜像定义：源二叉树
  *     	    8
@@ -23,7 +24,7 @@ public class BinaryTreeMirror {
 
     /**
      * 二叉树的镜像
-     * @param root 结点
+     * @param root 二叉树的结点
      */
     private void Mirror(TreeNode root) {
         if (root == null)

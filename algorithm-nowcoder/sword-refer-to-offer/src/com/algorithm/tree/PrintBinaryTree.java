@@ -18,7 +18,6 @@ public class PrintBinaryTree {
      */
     private ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
 
-
         return null;
     }
 
