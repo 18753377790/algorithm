@@ -15,7 +15,16 @@ public class MultiplyArray {
 
     /**
      * 构建乘积数组
-     * B[i] = A[0]*...*A[n-1] / A[i]
+     * B[i]=A[0]*A[1]*...*A[i-1]*A[i+1]*...*A[n-1]
+     * B[i]=A[0]*...*A[n-1] / A[i]
+     *       {
+     * B[0]    A[i] A[1] A[2] A[3] A[4]
+     * B[1]    A[0] A[i] A[2] A[3] A[4]
+     * B[2]    A[0] A[1] A[i] A[3] A[4]
+     * B[3]    A[0] A[1] A[2] A[i] A[4]
+     * B[4]    A[0] A[1] A[2] A[3] A[i]
+     *       }
+     * 以对角线为分界线，先算上半部分，再算下半部分，最后相乘
      * @param A 原数组
      * @return 构建的乘积数组
      */
@@ -26,8 +35,19 @@ public class MultiplyArray {
 
         // 构建的乘积数组B
         int[] B = new int[length];
-        for (int i = 0; i < length; i++) {
 
+        int number = 1;
+        // 下半部分，从左往右，B[i]=A[0]*A[1]*...*A[i-1]
+        for (int i = 0; i < length; i++) {
+            B[i] = number;
+            number *= A[i];
+        }
+
+        number = 1;
+        // 上半部分，从右往左，B[i]*=A[i+1]*...*A[n-1]
+        for (int i = length - 1; i >= 0; i--) {
+            B[i] *= number;
+            number *= A[i];
         }
 
         return B;

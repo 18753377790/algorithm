@@ -20,7 +20,18 @@ import java.util.ArrayList;
  */
 public class MaxInWindows {
 
+    /**
+     * 求滑动窗口最大值
+     * @param num 给定数组
+     * @param size 滑动窗口大小
+     * @return 滑动窗口最大值的序列
+     */
     public ArrayList<Integer> maxInWindows(int[] num, int size) {
+        int length = num.length;
+        if (length == 0 || size < 0)
+            return null;
+
+
         return null;
     }
 

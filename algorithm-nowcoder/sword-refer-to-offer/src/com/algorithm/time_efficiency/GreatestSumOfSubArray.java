@@ -12,7 +12,7 @@ package com.algorithm.time_efficiency;
  * @Date 2019/11/3 15:49
  * @Version 1.0
  */
-public class MaxSumOfSubArray {
+public class GreatestSumOfSubArray {
 
     /**
      * 求连续子数组的最大和
@@ -34,8 +34,6 @@ public class MaxSumOfSubArray {
 
         for (int i = 0; i < length; i++) {
             sum += array[i];
-
-
         }
 
         return max;
@@ -46,8 +44,8 @@ public class MaxSumOfSubArray {
         int[] array = {6, -3, -2, 7, -15, 1, 2, 2};
         // -1
         int[] arr = {-2,-8,-1,-5,-9};
-        MaxSumOfSubArray max = new MaxSumOfSubArray();
-        System.out.println(max.FindGreatestSumOfSubArray(array));
-        System.out.println(max.FindGreatestSumOfSubArray(arr));
+        GreatestSumOfSubArray greatest = new GreatestSumOfSubArray();
+        System.out.println(greatest.FindGreatestSumOfSubArray(array));
+        System.out.println(greatest.FindGreatestSumOfSubArray(arr));
     }
 }

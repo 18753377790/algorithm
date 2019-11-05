@@ -12,6 +12,7 @@ public class IsBalancedBinaryTree {
 
     /**
      * 判断是否是平衡二叉树
+     * 平衡二叉树是一棵空树或者它的左右两个子树的高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树。
      * @param root 二叉树的结点
      * @return 是否为平衡二叉树
      */
