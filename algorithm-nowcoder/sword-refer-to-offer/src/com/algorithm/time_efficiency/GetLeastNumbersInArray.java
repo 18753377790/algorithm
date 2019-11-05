@@ -15,9 +15,9 @@ public class GetLeastNumbersInArray {
 
     /**
      * 寻找最小的K个数
-     * @param input
-     * @param k
-     * @return
+     * @param input 待寻找的数组
+     * @param k 最小的k个
+     * @return 最小的k个数
      */
     private ArrayList<Integer> GetLeastNumbers(int[] input, int k) {
         if (input == null || input.length == 0 || input.length < k || k == 0)
