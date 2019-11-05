@@ -14,12 +14,16 @@ public class SumOneToN {
 
     /**
      * 求1到n的累加和
+     * 1+2+3+...+n
+     * An=A1+(n-1)=n
+     * Sn=n(A1+An)/2=(n+n^2)/2
      * @param n n的大小
      * @return 1到n的累加和
      */
     private int Sum(int n){
-
-        return 0;
+        int sum = (int) Math.pow(n, 2) + n;
+        // 变量为非负数时，右移1相当于除以2，左移相当于乘以2
+        return sum >> 1;
     }
 
     public static void main(String[] args) {
