@@ -15,14 +15,14 @@ public class InsertionSort {
     public static void main(String[] args) {
         System.out.println("插入排序开始：");
         Scanner scanner = new Scanner(System.in);
-        Integer[] array = new Integer[10];
+        int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();
         }
 
         System.out.println("排序前的数组："+ Arrays.toString(array)+"\n");
 
-        InsertionSort(array);
+        insertionSort(array);
 
         System.out.println("排序后的数组："+Arrays.toString(array));
     }
@@ -31,17 +31,17 @@ public class InsertionSort {
      *
      * @param array
      */
-    private static void InsertionSort(Integer[] array){
-        Integer j,t;
+    private static void insertionSort(int[] array){
+        int j,t;
         for (int i = 0; i < array.length; i++) {
             t = array[i];
-            j = i-1;
-            while (j>=0 && t<array[j]){
-                array[j+1] = array[j];
+            j = i - 1;
+            while (j >= 0 && t < array[j]){
+                array[j + 1] = array[j];
                 j--;
             }
-            array[j+1] =t;
-            System.out.println("第"+i+"步排序结果："+Arrays.toString(array)+"\n");
+            array[j + 1] = t;
+            System.out.println("第" + i + "步排序结果：" + Arrays.toString(array) + "\n");
         }
     }
 }

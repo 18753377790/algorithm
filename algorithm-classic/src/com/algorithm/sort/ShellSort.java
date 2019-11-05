@@ -27,7 +27,7 @@ public class ShellSort {
         System.out.println("排序后的数组为："+Arrays.toString(array));
     }
 
-    public static void shellSort(Integer[] array){
+    private static void shellSort(Integer[] array){
         
     }
 }

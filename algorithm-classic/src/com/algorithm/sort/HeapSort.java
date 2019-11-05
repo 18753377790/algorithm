@@ -14,4 +14,8 @@ public class HeapSort {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
     }
+
+    private static void heapSort(){
+
+    }
 }
