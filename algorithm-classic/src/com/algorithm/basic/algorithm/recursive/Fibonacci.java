@@ -13,14 +13,14 @@ public class Fibonacci {
 
     /**
      * 递推算法
-     * @param n
-     * @return
+     * @param n 时间
+     * @return 兔子对数
      */
-    private static Integer fibonacci(Integer n){
-        Integer t1,t2;
+    private static int fibonacci(int n){
+        int t1, t2;
         if (n <= 0){
             System.out.println("ERROR");
-            return null;
+            return 0;
         } else if (n == 1 || n == 2){
             return 1;
         }else {
@@ -32,10 +32,10 @@ public class Fibonacci {
 
     public static void main(String[] args) {
         System.out.println("");
-        System.out.println("");
+        System.out.println("请先输入时间：");
         Scanner scanner = new Scanner(System.in);
-        Integer n = scanner.nextInt();
-        Integer num = fibonacci(n);
+        int n = scanner.nextInt();
+        int num = fibonacci(n);
         System.out.println(num);
     }
 }

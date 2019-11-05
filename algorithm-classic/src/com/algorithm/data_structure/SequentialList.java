@@ -34,7 +34,7 @@ public class SequentialList {
     }
 
     /**
-     *
+     * 初始化顺序表
      * @param list
      */
     public void init(SequentialList list) {
@@ -42,7 +42,7 @@ public class SequentialList {
     }
 
     /**
-     *
+     * 计算顺序表长度
      * @param list
      * @return
      */
@@ -51,7 +51,7 @@ public class SequentialList {
     }
 
     /**
-     *
+     * 插入结点
      * @param list
      * @param n
      * @param data
@@ -70,27 +70,56 @@ public class SequentialList {
         return 1;
     }
 
-    public int add() {
+    /**
+     *
+     * @param list
+     * @param data
+     * @return
+     */
+    public int add(SequentialList list, Data data) {
         return 0;
     }
 
-    public int delete() {
+    /**
+     *
+     * @param list
+     * @param n
+     * @return
+     */
+    public int delete(SequentialList list, int n) {
         return 0;
     }
 
+    /**
+     *
+     * @param list
+     * @param n
+     * @return
+     */
     public Data findByNumber(SequentialList list, int n) {
         return null;
     }
 
+    /**
+     *
+     * @param list
+     * @param key
+     * @return
+     */
     public int findByContent(SequentialList list, String key) {
         return 0;
     }
 
+    /**
+     * 显示所有结点
+     * @param list
+     * @return
+     */
     public int all(SequentialList list) {
+        int i;
+        for (int j = 0; j < list.length; j++) {
+
+        }
         return 0;
-    }
-
-    public static void main(String[] args) {
-
     }
 }
