@@ -13,6 +13,11 @@ import java.util.Scanner;
 public class QuickSort {
 
     /**
+     * 数组长度
+     */
+    private static final int LENGTH = 10;
+
+    /**
      * 快速排序
      * @param array 待排序的数组
      * @param left 数组起始下标
@@ -55,7 +60,7 @@ public class QuickSort {
     public static void main(String[] args) {
         System.out.println("快速排序开始：");
         Scanner scanner = new Scanner(System.in);
-        int[] array = new int[10];
+        int[] array = new int[LENGTH];
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();
         }
