@@ -1,4 +1,4 @@
-package com.algorithm.basic.math;
+package com.algorithm.basic_math_problem;
 
 import java.util.Scanner;
 

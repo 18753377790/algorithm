@@ -1,4 +1,4 @@
-package com.algorithm.basic.algorithm.probability;
+package com.algorithm.basic_algorithm_idea.probability;
 
 import java.util.Scanner;
 

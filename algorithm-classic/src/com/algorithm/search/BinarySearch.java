@@ -1,5 +1,7 @@
 package com.algorithm.search;
 
+import java.util.Scanner;
+
 /**
  * @Author 李非凡
  * @Description:
@@ -10,60 +12,40 @@ package com.algorithm.search;
 public class BinarySearch {
 
     /**
-     * 快速排序
-     * @param array
-     * @param left
-     * @param right
+     * 数组长度
      */
-    private static void quickSort(int[] array, int left, int right) {
-        // 开始的位置
-        int start = left;
-        // 结束的位置
-        int end = right;
-        // 确定分界值
-        int pivot  = array[(left + right) / 2];
-        // 当左边小于右边时
-        while (left < right){
-            //
-            while (array[left] < pivot){
-                ++left;
-            }
-            //
-            while (array[right] > pivot){
-                --right;
-            }
-            //
-            if (left <= right){
-                int temp = array[left];
-                array[left] = array[right];
-                array[right] = temp;
-            }
-            //
-            if (left == right){
-                left++;
-            }
-            //
-            if (left < start){
-
-            }
-
-            if (right< end){
-
-            }
-        }
-    }
+    private static final int LENGTH = 10;
 
     /**
      * 二分查找
      * @param array
-     * @param left
-     * @param right
+     * @param n
+     * @param x
+     * @return
      */
-    private static void binarySearch(int[] array, int left, int right) {
+    private static int binarySearch(int[] array, int n, int x) {
+        int low = 0;
+        int high = n - 1;
+        int middle = (low + high) / 2;
 
+        while (low <= high) {
+            if (array[middle] == x)
+                return middle;
+            else if (array[middle] > x)
+                high = middle - 1;
+            else
+                low = middle + 1;
+        }
+
+        return -1;
     }
 
     public static void main(String[] args) {
+
+        int[] array = new int[LENGTH];
+
+        Scanner scanner = new Scanner(System.in);
+
 
     }
 }

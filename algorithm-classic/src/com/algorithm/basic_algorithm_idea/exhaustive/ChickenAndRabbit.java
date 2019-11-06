@@ -1,4 +1,4 @@
-package com.algorithm.basic.algorithm.exhaustive;
+package com.algorithm.basic_algorithm_idea.exhaustive;
 
 import java.util.Scanner;
 
