@@ -1,7 +1,6 @@
 package com.algorithm.sort;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 /**
  * @Author 李非凡
@@ -58,12 +57,15 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
+
         System.out.println("快速排序开始：");
-        Scanner scanner = new Scanner(System.in);
+
         int[] array = new int[LENGTH];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = scanner.nextInt();
+
+        for (int i = 0; i < LENGTH; i++) {
+            array[i] = (int) (100 + Math.random() * (100 + 1));
         }
+
         System.out.println("排序前的数组为：" + Arrays.toString(array));
 
         quickSort(array, 0, array.length - 1);

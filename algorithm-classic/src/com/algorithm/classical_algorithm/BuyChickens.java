@@ -8,7 +8,7 @@ package com.algorithm.classical_algorithm;
  * @Date 2019/11/6 17:34
  * @Version 1.0
  */
-public class AHundredToBuyAHundredChickens {
+public class BuyChickens {
 
     /**
      * 百钱买百鸡求解
@@ -19,8 +19,16 @@ public class AHundredToBuyAHundredChickens {
      * @param number 鸡数（白鸡）
      */
     private static void buyChicken(int money, int number) {
-        int x, y, z;
-
+        for (int x = 0; x <= number ; x++) {
+            for (int y = 0; y <= number ; y++) {
+                int z = number - x - y;
+                if (z > 0 && z % 3 == 0 && x * 5 + y* 3 + z / 3 == money) {
+                    System.out.printf("公鸡：%d只，母鸡：%d只，小鸡：%d只\n", x, y, z);
+                }else {
+                    System.out.print("");
+                }
+            }
+        }
     }
 
     public static void main(String[] args) {
@@ -29,7 +37,7 @@ public class AHundredToBuyAHundredChickens {
         // 百鸡
         int number = 100;
 
-        System.out.println();
+        System.out.println("百钱买百鸡问题的求解结果为：");
 
         buyChicken(money, number);
     }

@@ -13,6 +13,11 @@ import java.util.Scanner;
 public class HeapSort {
 
     /**
+     * 数组长度
+     */
+    private static final int LENGTH = 10;
+
+    /**
      * 堆排序
      * @param array 待排序的数组
      * @param n 待排序的数组长度
@@ -24,7 +29,7 @@ public class HeapSort {
     public static void main(String[] args) {
         System.out.println("堆排序开始：");
         Scanner scanner = new Scanner(System.in);
-        int[] array = new int[10];
+        int[] array = new int[LENGTH];
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();
         }
