@@ -9,4 +9,18 @@ package com.algorithm.geekbang.basic.linear_list;
  */
 public class LinkedListStack {
 
+    /**
+     *  数组
+     */
+    private String[] items;
+
+    /**
+     * 栈中元素个数
+     */
+    private int count;
+
+    /**
+     * 栈的大小
+     */
+    private int n;
 }

@@ -7,4 +7,8 @@ package com.algorithm.geekbang.basic.linear_list;
  * @Version 1.0
  */
 public class CircularQueue {
+
+    public static void main(String[] args) {
+
+    }
 }

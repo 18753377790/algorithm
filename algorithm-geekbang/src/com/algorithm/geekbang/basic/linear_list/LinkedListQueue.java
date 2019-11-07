@@ -8,4 +8,7 @@ package com.algorithm.geekbang.basic.linear_list;
  */
 public class LinkedListQueue {
 
+    public static void main(String[] args) {
+
+    }
 }
