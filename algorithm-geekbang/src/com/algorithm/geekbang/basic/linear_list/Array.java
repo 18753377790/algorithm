@@ -43,19 +43,11 @@ import java.util.ArrayList;
  */
 public class Array {
 
-//    int main(int argc, char* argv[]){
-//        int i = 0;
-//        int arr[3] = {0};
-//        for(; i<=3; i++){
-//            arr[i] = 0;
-//            printf("hello world\n");
-//        }
-//        return 0;
-//    }
+    private int[] data;
+
+//    private
 
     public static void main(String[] args) {
-//        int[] a = new int[3];
-//        a[3] = 10;
         ArrayList<Object> objects = new ArrayList<>(10000);
         for (int i = 0; i < 10000; ++i) {
             objects.add("xxx");
