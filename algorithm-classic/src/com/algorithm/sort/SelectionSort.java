@@ -20,7 +20,7 @@ public class SelectionSort {
         int index;
         for (int i = 0; i < array.length-1; i++) {
             index = i;
-            for (int j = i+1; j < array.length; j++) {
+            for (int j = i + 1; j < array.length; j++) {
                 if (array[j] < array[index]){
                     index = j;
                 }
@@ -31,7 +31,7 @@ public class SelectionSort {
                 array[i] = array[index];
                 array[index] = temp;
             }
-            System.out.println("第"+i+"步排序结果：" + Arrays.toString(array) + "\n");
+            System.out.println("第" + i + "步排序结果：" + Arrays.toString(array) + "\n");
         }
     }
 

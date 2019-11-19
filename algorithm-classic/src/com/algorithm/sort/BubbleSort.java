@@ -23,8 +23,10 @@ public class BubbleSort {
      */
     private static void bubbleSort(int[] array){
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length-1-i; j++) {
+            for (int j = 0; j < array.length - 1 - i; j++) {
+                // 将相邻两个数进行比较，较大的数往后冒泡
                 if (array[j] > array[j + 1]){
+                    // 交换相邻两个数
                     int temp = array[j];
                     array[j] = array[j + 1];
                     array[j+1] = temp;
