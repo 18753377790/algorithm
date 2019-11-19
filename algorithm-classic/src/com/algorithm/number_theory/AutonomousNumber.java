@@ -3,11 +3,11 @@ package com.algorithm.number_theory;
 /**
  * @Author 李非凡
  * @Description:
- * 水仙花数
- * @Date 2019/9/4 22:21
+ * 自守数
+ * @Date 2019/9/4 22:22
  * @Version 1.0
  */
-public class NarcissusNumber {
+public class AutonomousNumber {
 
     public static void main(String[] args) {
 
