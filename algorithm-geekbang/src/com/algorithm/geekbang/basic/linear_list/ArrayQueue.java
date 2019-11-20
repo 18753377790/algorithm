@@ -5,6 +5,8 @@ package com.algorithm.geekbang.basic.linear_list;
  * @Description:
  * 顺序队列->用数组实现的队列
  * 队列和栈都是操作受限的线性表数据结构。
+ *
+ * 队列需要两个指针：一个是 head 指针，指向队头；一个是 tail 指针，指向队尾。
  * @Date 2019/9/30 15:04
  * @Version 1.0
  */
@@ -21,7 +23,7 @@ public class ArrayQueue {
     private int n;
 
     /**
-     * head表示对头下标
+     * head表示队头下标
      */
     private int head = 0;
 
@@ -44,14 +46,18 @@ public class ArrayQueue {
      * @param item 入队的元素
      * @return 入队操作是否成功
      */
-    public boolean enqueue(String item) {
-        //  如果 tail == n 表示队列已经满了
-        if (tail == n)
-            return false;
-        items[tail] = item;
-        ++tail;
-        return true;
-    }
+//    public boolean enqueue(String item) {
+//        //  如果 tail == n 表示队列已经满了
+//        if (tail == n)
+//            return false;
+//        items[tail] = item;
+//        ++tail;
+//        return true;
+//    }
+
+//    public boolean enqueue(String item) {
+//
+//    }
 
     /**
      * 出队

@@ -9,4 +9,25 @@ package com.algorithm.geekbang.basic.linear_list;
  */
 public class CircularQueue {
 
+    /**
+     * 数组：items
+     */
+    private String[] items;
+
+    /**
+     * 数组大小：n
+     */
+    private int n;
+
+    /**
+     * head表示队头下标
+     */
+    private int head = 0;
+
+    /**
+     * tail表示队尾下标
+     */
+    private int tail = 0;
+
+
 }

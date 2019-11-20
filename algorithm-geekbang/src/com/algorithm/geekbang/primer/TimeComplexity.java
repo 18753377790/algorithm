@@ -43,8 +43,6 @@ public class TimeComplexity {
     /**
      * 线性时间复杂度
      * 2n+2 -> O(n)
-     * Constant
-     * Logarithmic
      * @param n
      * @return sum
      */
