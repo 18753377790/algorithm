@@ -16,6 +16,26 @@ public class GreatestCommonDivisor {
      * @return
      */
     private static int divisionAlgorithm(int a, int b) {
+        int m, n;
+        if (a > b) {
+            m = a;
+            n = b;
+        }else {
+            m = b;
+            n = a;
+        }
+        // 余数
+        int remainder = m % n;
+        // 辗转相除
+        while (remainder != 0) {
+            m = n;
+            n = remainder;
+            remainder = m % n;
+        }
+        return n;
+    }
+
+    private static int steinAlgorithm() {
         return 0;
     }
 
