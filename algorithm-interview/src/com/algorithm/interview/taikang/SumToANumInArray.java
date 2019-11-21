@@ -14,7 +14,7 @@ public class SumToANumInArray {
      * @param array
      * @param num
      */
-    private static void getSumToANum(int[] array, int num) {
+    private static void printSumToANum(int[] array, int num) {
 
     }
 
