@@ -46,18 +46,37 @@ public class ArrayQueue {
      * @param item 入队的元素
      * @return 入队操作是否成功
      */
-//    public boolean enqueue(String item) {
-//        //  如果 tail == n 表示队列已经满了
-//        if (tail == n)
-//            return false;
-//        items[tail] = item;
-//        ++tail;
-//        return true;
-//    }
+    public boolean enqueue(String item) {
+        //  如果 tail == n 表示队列已经满了
+        if (tail == n)
+            return false;
 
-//    public boolean enqueue(String item) {
-//
-//    }
+        items[tail] = item;
+        ++tail;
+        return true;
+    }
+
+    /**
+     * 入队操作，将item放入队尾
+     * @param item 入队的元素
+     * @return 入队操作是否成功
+     */
+    public boolean enqueuePlus(String item) {
+
+        if (tail == n) {
+            if (head == 0)
+                return false;
+
+            if (tail - head >= 0) System.arraycopy(items, head, items, 0, tail - head);
+
+            tail -= head;
+            head = 0;
+        }
+
+        items[tail] = item;
+        ++tail;
+        return true;
+    }
 
     /**
      * 出队
