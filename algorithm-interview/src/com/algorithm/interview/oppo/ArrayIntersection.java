@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * @Author 李非凡
  * @Description:
- * OPPO面试题：两个数组求交集
+ * 易思优外派OPPO面试题：两个数组求交集
  * @Date 2019/11/20 14:04
  * @Version 1.0
  */

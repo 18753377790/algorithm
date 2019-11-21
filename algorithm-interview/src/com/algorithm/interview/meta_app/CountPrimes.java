@@ -29,8 +29,8 @@ public class CountPrimes {
 
     /**
      * 统计质数的方法
-     * @param n
-     * @return
+     * @param n 统计质数的范围（0~n）
+     * @return 质数出现的次数
      */
     private int countPrimes(int n){
         // 如果n <= 2，则没有小于他们的质数

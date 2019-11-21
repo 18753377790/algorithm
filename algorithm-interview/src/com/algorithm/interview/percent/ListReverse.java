@@ -9,8 +9,6 @@ package com.algorithm.interview.percent;
  */
 public class ListReverse {
 
-
-
     public static void main(String[] args) {
 
     }
