@@ -2,6 +2,7 @@ package com.algorithm.interview.oppo;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Random;
 import java.util.Set;
 
 /**
@@ -20,7 +21,7 @@ public class ArrayIntersection {
      * @return 两个数组的交集
      */
     private static int[] getIntersectionByLoop(int[] array1, int[] array2) {
-        int[] result = new int[100];
+//        int[] result = new int[100];
 
 //        for (int i = 0; i < array1.length; i++) {
 //            for (int j = 0; j < array2.length; j++) {
@@ -29,7 +30,7 @@ public class ArrayIntersection {
 //            }
 //        }
 
-        return result;
+        return null;
     }
 
     /**
@@ -48,6 +49,7 @@ public class ArrayIntersection {
         Set<Integer> set2 = new HashSet<>(Arrays.asList(integers2));
         set1.retainAll(set2);
 
+//        Integer[] integers = set1.toArray(new Integer[set1.size()]);
         Integer[] integers = set1.toArray(new Integer[0]);
         return Arrays.stream(integers).mapToInt(Integer::valueOf).toArray();
     }
@@ -66,13 +68,13 @@ public class ArrayIntersection {
     }
 
     public static void main(String[] args) {
-        int[] array1 = {};
-        int[] array2 = {};
+        int[] array1 = new Random().ints(100, 1, 10000).toArray();
+        int[] array2 = new Random().ints(100, 1, 10000).toArray();
 
-        System.out.println("");
-        System.out.println("");
+        System.out.println("" + Arrays.toString(array1));
+        System.out.println("" + Arrays.toString(array2));
         System.out.println("双层循环实现数组求交集：" + Arrays.toString(getIntersectionByLoop(array1, array2)));
-        System.out.println("HashSet实现数组求交集：" + Arrays.toString(getIntersectionByHashSet(array1, array2)));
-        System.out.println("流和过滤器实现数组求交集：" + Arrays.toString(getIntersectionByStream(array1, array2)));
+        System.out.println("HashSet实现数组求交集：" + Arrays.toString(getIntersectionByHashSet(array1, array2)) + getIntersectionByHashSet(array1, array2).length);
+        System.out.println("流和过滤器实现数组求交集：" + Arrays.toString(getIntersectionByStream(array1, array2)) + getIntersectionByStream(array1, array2).length);
     }
 }
