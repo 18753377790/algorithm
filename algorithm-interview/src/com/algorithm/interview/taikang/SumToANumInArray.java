@@ -1,5 +1,7 @@
 package com.algorithm.interview.taikang;
 
+import java.util.Random;
+
 /**
  * @Author 李非凡
  * @Description:
@@ -19,6 +21,8 @@ public class SumToANumInArray {
     }
 
     public static void main(String[] args) {
+        // 构造一个随机的有序数组
+        int[] array = new Random().ints(10, 1, 10).sorted().toArray();
 
     }
 }
