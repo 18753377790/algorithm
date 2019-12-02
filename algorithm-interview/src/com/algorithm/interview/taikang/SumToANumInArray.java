@@ -1,9 +1,5 @@
 package com.algorithm.interview.taikang;
 
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
-
 /**
  * @Author 李非凡
  * @Description:
