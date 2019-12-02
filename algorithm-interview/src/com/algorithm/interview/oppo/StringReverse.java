@@ -3,7 +3,7 @@ package com.algorithm.interview.oppo;
 /**
  * @Author 李非凡
  * @Description:
- * 易思优外派OPPO面试题：字符串反转
+ * 博彦科技外派OPPO面试题：字符串反转
  * @Date 2019/11/20 13:47
  * @Version 1.0
  */

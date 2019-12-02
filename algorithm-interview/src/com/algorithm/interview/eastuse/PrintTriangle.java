@@ -5,6 +5,7 @@ import java.util.Scanner;
 /**
  * @Author 李非凡
  * @Description:
+ * 易思优外派国家电网公司面试题：
  * 打印三角形
  * @Date 2019/11/19 9:48
  * @Version 1.0

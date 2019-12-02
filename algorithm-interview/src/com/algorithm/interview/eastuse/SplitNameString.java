@@ -3,7 +3,7 @@ package com.algorithm.interview.eastuse;
 /**
  * @Author 李非凡
  * @Description:
- * 易思优面试题
+ * 易思优外派国家电网公司面试题
  * 有如下形式的字符串，包含n个姓名："zhangsan,lisi,wangwu,......"，请打印出全部姓名如下形式
  * zhangsan
  * lisi
@@ -14,7 +14,7 @@ package com.algorithm.interview.eastuse;
 public class SplitNameString {
 
     /**
-     *
+     * 打印拆分后的字符串
      * @param str 待拆分打印的字符串
      */
     private static void print(String str) {
