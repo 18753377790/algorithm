@@ -1,4 +1,4 @@
-package com.algorithm.geekbang.basic.linear_list;
+package com.algorithm.geekbang.basic.linearlist;
 
 /**
  * @Author 李非凡
@@ -48,8 +48,9 @@ public class ArrayQueue {
      */
     public boolean enqueue(String item) {
         //  如果 tail == n 表示队列已经满了
-        if (tail == n)
+        if (tail == n) {
             return false;
+        }
 
         items[tail] = item;
         ++tail;
@@ -64,10 +65,13 @@ public class ArrayQueue {
     public boolean enqueuePlus(String item) {
 
         if (tail == n) {
-            if (head == 0)
+            if (head == 0) {
                 return false;
+            }
 
-            if (tail - head >= 0) System.arraycopy(items, head, items, 0, tail - head);
+            if (tail - head >= 0) {
+                System.arraycopy(items, head, items, 0, tail - head);
+            }
 
             tail -= head;
             head = 0;
@@ -84,8 +88,9 @@ public class ArrayQueue {
      */
     public String dequeue() {
         // 如果 head == tail 表示队列为空
-        if (head == tail)
+        if (head == tail) {
             return null;
+        }
         String ret = items[head];
         ++head;
         return ret;

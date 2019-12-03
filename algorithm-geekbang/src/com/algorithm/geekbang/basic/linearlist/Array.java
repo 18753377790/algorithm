@@ -1,4 +1,4 @@
-package com.algorithm.geekbang.basic.linear_list;
+package com.algorithm.geekbang.basic.linearlist;
 
 import java.util.ArrayList;
 
@@ -48,8 +48,9 @@ public class Array {
 //    private
 
     public static void main(String[] args) {
-        ArrayList<Object> objects = new ArrayList<>(10000);
-        for (int i = 0; i < 10000; ++i) {
+        int capacity = 10000;
+        ArrayList<Object> objects = new ArrayList<>(capacity);
+        for (int i = 0; i < capacity; ++i) {
             objects.add("xxx");
         }
         System.out.println(objects);

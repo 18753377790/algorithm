@@ -37,8 +37,9 @@ public class BubbleSort {
      * @param n 数组的长度
      */
     private void bubbleSort(int[] a, int n){
-        if (n <= 1)
+        if (n <= 1) {
             return;
+        }
         for (int i = 0; i < n; i++) {
             // 提前退出冒泡循环的标志位
             boolean flag = false;
@@ -53,8 +54,9 @@ public class BubbleSort {
                 }
             }
             // 没有数据交换，提前退出
-            if (!flag)
+            if (!flag) {
                 break;
+            }
         }
     }
 

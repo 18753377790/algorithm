@@ -7,4 +7,8 @@ package com.algorithm.geekbang.advanced;
  * @Version 1.0
  */
 public class BitMap {
+
+    public static void main(String[] args) {
+
+    }
 }

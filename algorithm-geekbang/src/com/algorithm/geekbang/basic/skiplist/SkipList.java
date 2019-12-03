@@ -1,4 +1,4 @@
-package com.algorithm.geekbang.basic.skip_list;
+package com.algorithm.geekbang.basic.skiplist;
 
 /**
  * @Author 李非凡

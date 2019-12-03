@@ -92,8 +92,9 @@ class Meeting implements Comparable<Meeting>{
      */
     @Override
     public int compareTo(Meeting o) {
-        if (this.endTime > o.endTime)
+        if (this.endTime > o.endTime) {
             return 1;
+        }
         return -1;
     }
 

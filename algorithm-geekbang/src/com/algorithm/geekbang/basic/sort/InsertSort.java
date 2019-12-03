@@ -35,8 +35,9 @@ public class InsertSort {
      * @param n 数组的长度
      */
     private void insertSort(int[] a, int n){
-        if (n <= 1)
+        if (n <= 1) {
             return;
+        }
 
         for (int i = 0; i < n; i++) {
             // 待定义插入的数

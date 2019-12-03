@@ -108,7 +108,9 @@ public class TimeComplexity {
         int i = 0;
         int pos = -1;
         for (; i < n; ++i) {
-            if (array[i] == x) pos = i;
+            if (array[i] == x) {
+                pos = i;
+            }
         }
         return pos;
     }

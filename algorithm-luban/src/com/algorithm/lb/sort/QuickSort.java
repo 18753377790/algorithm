@@ -14,13 +14,6 @@ public class QuickSort {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-//        int n = scanner.nextInt();
-//        int[] data = new int[n + 1];
-//        for (int i = 0; i < n; i++) {
-//            data[i] = scanner.nextInt();
-//        }
-
         int[] data = {45, 28, 80, 90, 50, 16, 100, 10};
         quickSort(data, 0, data.length - 1);
 

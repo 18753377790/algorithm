@@ -75,8 +75,9 @@ public class MyHashMap<K, V> {
     }
 
     private MyHashMap(int capacity) {
-        if (capacity <= 0)
+        if (capacity <= 0) {
             capacity = DEFAULT_SIZE;
+        }
         this.capacity = capacity;
         data = new Entry[capacity];
     }
@@ -88,8 +89,9 @@ public class MyHashMap<K, V> {
      */
     private void put(K key, V value){
         // HashMap key和value都可以为null
-        if (key == null)
+        if (key == null) {
             return;
+        }
         // 少了一个扩容
 //        if (size >= 0.75 * capacity)
 //        resize()会把所有的数据（Hash值）重新计算一次
@@ -145,10 +147,11 @@ public class MyHashMap<K, V> {
      */
     private int hash(K key){
         int h = 0;
-        if (key == null)
+        if (key == null) {
             h = 0;
-        else {
-            h = key.hashCode() ^ (h >>> 16); // 无符号右移16位
+        } else {
+            // 无符号右移16位
+            h = key.hashCode() ^ (h >>> 16);
         }
         return h % capacity;
     }
@@ -173,13 +176,25 @@ public class MyHashMap<K, V> {
  * @param <V>
  */
 class Entry<K, V>{
-    // 键
+
+    /**
+     * 键
+     */
     K key;
-    // 值
+
+    /**
+     * 值
+     */
     V value;
-    // 指针，链表的指针
+
+    /**
+     * 指针，链表的指针
+     */
     Entry<K, V> next;
-    // Hash冲突的个数
+
+    /**
+     * Hash冲突的个数
+     */
     int cap;
 
     Entry(K key, V value, Entry<K, V> next) {

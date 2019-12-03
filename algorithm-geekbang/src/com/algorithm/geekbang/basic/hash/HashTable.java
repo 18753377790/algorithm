@@ -31,7 +31,7 @@ public class HashTable {
     /**
      * 散列表的容量
      */
-    private static final int capacity = 1 << 4;
+    private static final int CAPACITY = 1 << 4;
 
     /**
      *
@@ -67,7 +67,6 @@ public class HashTable {
      */
     private int hash(String key) {
         String lastTwoChars = key.substring(key.length() - 2);
-//        int hashValue = Integer.parseInt(lastTwoChars);
         return Integer.parseInt(lastTwoChars);
     }
 
@@ -79,14 +78,15 @@ public class HashTable {
      */
     private int hash(Object key) {
         int h = key.hashCode();
-        //capacity 表示散列表的大小
-        return (h ^ (h >>> 16)) & (capacity -1);
+        // CAPACITY 表示散列表的大小
+        return (h ^ (h >>> 16)) & (CAPACITY -1);
     }
 
     /**
      * hashCode方法
      * @return hash值
      */
+    @Override
     public int hashCode() {
         int var1 = this.hash;
         if(var1 == 0 && this.value.length > 0) {

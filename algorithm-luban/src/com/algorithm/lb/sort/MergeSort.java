@@ -72,7 +72,9 @@ public class MergeSort {
 //        for(int i = left ;i <= right ; i++) {
 //            data[i] = temp[i];
 //        }
-        if (right + 1 - left >= 0) System.arraycopy(temp, left, data, left, right + 1 - left);
+        if (right + 1 - left >= 0) {
+            System.arraycopy(temp, left, data, left, right + 1 - left);
+        }
     }
 
     public static void main(String[] args) {
