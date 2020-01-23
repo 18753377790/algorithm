@@ -1,4 +1,4 @@
-package com.algorithm.geekbang.basic.basic_algorithm;
+package com.algorithm.geekbang.basic.basicalgorithm;
 
 /**
  * @Author 李非凡
