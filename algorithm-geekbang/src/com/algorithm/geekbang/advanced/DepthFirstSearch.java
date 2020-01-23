@@ -6,5 +6,6 @@ package com.algorithm.geekbang.advanced;
  * @Date 2019/10/17 22:34
  * @Version 1.0
  */
-public class DFS {
+public class DepthFirstSearch {
+
 }

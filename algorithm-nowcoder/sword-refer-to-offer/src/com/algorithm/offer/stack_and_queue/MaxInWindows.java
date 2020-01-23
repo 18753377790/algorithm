@@ -28,8 +28,6 @@ public class MaxInWindows {
      */
     public ArrayList<Integer> maxInWindows(int[] num, int size) {
         int length = num.length;
-        if (length == 0 || size < 0)
-            return null;
 
 
         return null;

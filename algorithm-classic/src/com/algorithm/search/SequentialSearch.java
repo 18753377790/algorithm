@@ -52,9 +52,10 @@ public class SequentialSearch {
 
         int n = sequentialSearch(array, x);
 
-        if (n < 0)
+        if (n < 0) {
             System.out.println("没找到数据：" + x);
-        else
+        } else {
             System.out.println("数据：" + x + "位于数组的第" + (n + 1) + "个元素处。");
+        }
     }
 }

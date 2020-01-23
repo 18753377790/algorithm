@@ -30,8 +30,9 @@ public class MultiplyArray {
      */
     private int[] multiply(int[] A) {
         int length = A.length;
-        if (length == 0)
+        if (length == 0) {
             return null;
+        }
 
         // 构建的乘积数组B
         int[] B = new int[length];

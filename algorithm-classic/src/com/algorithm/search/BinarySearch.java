@@ -34,12 +34,13 @@ public class BinarySearch {
         while (low <= high) {
             // 每次循环都需要重新计算中间值
             middle = (low + high) / 2;
-            if (array[middle] == x)
+            if (array[middle] == x) {
                 return middle;
-            else if (array[middle] > x)
+            } else if (array[middle] > x) {
                 high = middle - 1;
-            else
+            } else {
                 low = middle + 1;
+            }
         }
 
         return -1;
@@ -64,9 +65,10 @@ public class BinarySearch {
 
         int n = binarySearch(array, x);
 
-        if (n < 0)
+        if (n < 0) {
             System.out.println("没找到数据：" + x);
-        else
+        } else {
             System.out.println("数据：" + x + "位于数组的第" + (n + 1) + "个元素处。");
+        }
     }
 }

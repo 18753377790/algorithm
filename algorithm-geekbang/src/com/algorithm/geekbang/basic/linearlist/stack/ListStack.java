@@ -1,4 +1,4 @@
-package com.algorithm.geekbang.basic.linearlist;
+package com.algorithm.geekbang.basic.linearlist.stack;
 
 /**
  * @Author 李非凡
@@ -7,7 +7,7 @@ package com.algorithm.geekbang.basic.linearlist;
  * @Date 2019/10/31 20:55
  * @Version 1.0
  */
-public class LinkedListStack {
+public class ListStack {
 
     /**
      *  数组

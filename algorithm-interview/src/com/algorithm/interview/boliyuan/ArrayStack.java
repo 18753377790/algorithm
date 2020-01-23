@@ -117,7 +117,7 @@ public class ArrayStack<T> {
             stack.push(i);
         }
         stack.out();
-        stack.peek();
+        System.out.println(stack.peek());
         while (!stack.isEmpty()){
             System.out.println(stack.pop());
         }

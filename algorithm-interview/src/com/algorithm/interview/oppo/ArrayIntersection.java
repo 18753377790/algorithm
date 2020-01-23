@@ -71,8 +71,8 @@ public class ArrayIntersection {
         int[] array1 = new Random().ints(100, 1, 10000).toArray();
         int[] array2 = new Random().ints(100, 1, 10000).toArray();
 
-        System.out.println("" + Arrays.toString(array1));
-        System.out.println("" + Arrays.toString(array2));
+        System.out.println("数组一" + Arrays.toString(array1));
+        System.out.println("数组二" + Arrays.toString(array2));
         System.out.println("双层循环实现数组求交集：" + Arrays.toString(getIntersectionByLoop(array1, array2)));
         System.out.println("HashSet实现数组求交集：" + Arrays.toString(getIntersectionByHashSet(array1, array2)) + getIntersectionByHashSet(array1, array2).length);
         System.out.println("流和过滤器实现数组求交集：" + Arrays.toString(getIntersectionByStream(array1, array2)) + getIntersectionByStream(array1, array2).length);

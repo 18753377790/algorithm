@@ -1,4 +1,4 @@
-package com.algorithm.geekbang.basic.linearlist;
+package com.algorithm.geekbang.basic.linearlist.queue;
 
 /**
  * @Author 李非凡

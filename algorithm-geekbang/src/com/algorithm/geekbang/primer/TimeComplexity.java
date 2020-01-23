@@ -29,7 +29,7 @@ public class TimeComplexity {
     }
 
     /**
-     * 对数时间复杂度
+     * 对数时间复杂度 O(logN)
      * 在采用大 O 标记复杂度的时候，可以忽略系数，即 O(Cf(n)) = O(f(n))。
      * @param n
      */
@@ -81,19 +81,19 @@ public class TimeComplexity {
      * @return sum
      */
     private int cal(int m, int n) {
-        int sum_1 = 0;
+        int sum1 = 0;
         int i = 1;
         for (; i < m; ++i) {
-            sum_1 = sum_1 + i;
+            sum1 = sum1 + i;
         }
 
-        int sum_2 = 0;
+        int sum2 = 0;
         int j = 1;
         for (; j < n; ++j) {
-            sum_2 = sum_2 + j;
+            sum2 = sum2 + j;
         }
 
-        return sum_1 + sum_2;
+        return sum1 + sum2;
     }
 
     /**
