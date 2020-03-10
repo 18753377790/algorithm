@@ -23,7 +23,14 @@ public class BinarySortTreeDemo {
         System.out.println("查询值为5的结点" + binarySortTree.search(5));
         System.out.println("查询值为5的结点的父结点" + binarySortTree.searchParent(5));
 
-//        binarySortTree.delete(2);
+
+        binarySortTree.delete(2);
+        binarySortTree.delete(5);
+        binarySortTree.delete(9);
+        binarySortTree.delete(12);
+        binarySortTree.delete(7);
+        binarySortTree.delete(3);
+        binarySortTree.delete(1);
         binarySortTree.delete(10);
         System.out.println("删除结点后");
         binarySortTree.inOrder();

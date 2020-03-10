@@ -286,20 +286,29 @@ public class BinarySortTree {
             }else {// 删除一颗子树的结点
                 // 如果target有左子结点
                 if (target.getLeft() != null) {
-                    // 如果target是parent的左子结点
-                    if (parent.getLeft().getValue() == value) {
-                        parent.setLeft(target.getLeft());
+                    if (parent != null) {
+                        // 如果target是parent的左子结点
+                        if (parent.getLeft().getValue() == value) {
+                            parent.setLeft(target.getLeft());
+                        }else {
+                            // 如果target是parent的右子结点
+                            parent.setRight(target.getLeft());
+                        }
                     }else {
-                        // 如果target是parent的右子结点
-                        parent.setRight(target.getLeft());
+                        root = target.getLeft();
                     }
-                }else {// 如果target有右子结点
-                    // 如果target是parent的左子结点
-                    if (parent.getLeft().getValue() == value) {
-                        parent.setLeft(target.getRight());
+                }else {
+                    // 如果target有右子结点
+                    if (parent != null) {
+                        // 如果target是parent的左子结点
+                        if (parent.getLeft().getValue() == value) {
+                            parent.setLeft(target.getRight());
+                        }else {
+                            // 如果target是parent的右子结点
+                            parent.setRight(target.getRight());
+                        }
                     }else {
-                        // 如果target是parent的右子结点
-                        parent.setRight(target.getRight());
+                        root = target.getRight();
                     }
                 }
             }
