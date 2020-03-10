@@ -213,7 +213,7 @@ public class BinarySortTree {
     }
 
     /**
-     *
+     * 从右子树找到最小的
      * 返回以node为根结点的二叉排序树的最小结点的值
      * 删除以node为根结点的二叉排序树的最小结点
      * @param node
@@ -231,6 +231,7 @@ public class BinarySortTree {
     }
 
     /**
+     * 思考题：从左子树找到最大的
      * 返回以node为根结点的二叉排序树的最大结点的值
      * 删除以node为根结点的二叉排序树的最大结点
      * @param node

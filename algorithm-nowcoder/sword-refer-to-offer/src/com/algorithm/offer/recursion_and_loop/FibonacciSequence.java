@@ -22,10 +22,12 @@ public class FibonacciSequence {
      * @return 斐波那契数列的第n项的值
      */
     private int Fibonacci(int n) {
-        if (n < 0 || n > 39)
+        if (n < 0 || n > 39) {
             return -1;
-        if (n <= 1)
+        }
+        if (n <= 1) {
             return n;
+        }
         return Fibonacci(n - 1) + Fibonacci(n - 2);
     }
 

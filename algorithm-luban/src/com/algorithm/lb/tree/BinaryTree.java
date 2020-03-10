@@ -61,10 +61,12 @@ public class BinaryTree {
      */
     private void preOrder(Node root){
         print(root);
-        if (!Objects.isNull(root.getLeftNode()))
+        if (!Objects.isNull(root.getLeftNode())) {
             preOrder(root.getLeftNode());
-        if (!Objects.isNull(root.getRightNode()))
+        }
+        if (!Objects.isNull(root.getRightNode())) {
             preOrder(root.getRightNode());
+        }
     }
 
     /**
@@ -72,11 +74,13 @@ public class BinaryTree {
      * @param root 结点
      */
     private void inOrder(Node root){
-        if (!Objects.isNull(root.getLeftNode()))
+        if (!Objects.isNull(root.getLeftNode())) {
             inOrder(root.getLeftNode());
+        }
         print(root);
-        if (!Objects.isNull(root.getRightNode()))
+        if (!Objects.isNull(root.getRightNode())) {
             inOrder(root.getRightNode());
+        }
     }
 
     /**
@@ -84,10 +88,12 @@ public class BinaryTree {
      * @param root 结点
      */
     private void postOrder(Node root){
-        if (!Objects.isNull(root.getLeftNode()))
+        if (!Objects.isNull(root.getLeftNode())) {
             postOrder(root.getLeftNode());
-        if (!Objects.isNull(root.getRightNode()))
+        }
+        if (!Objects.isNull(root.getRightNode())) {
             postOrder(root.getRightNode());
+        }
         print(root);
     }
 }
