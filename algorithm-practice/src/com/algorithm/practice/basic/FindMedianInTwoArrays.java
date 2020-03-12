@@ -9,10 +9,10 @@ package com.algorithm.practice.basic;
 public class FindMedianInTwoArrays {
 
     /**
-     *
-     * @param nums1
-     * @param nums2
-     * @return
+     * 求两个有序数组的中间值
+     * @param nums1 数组1
+     * @param nums2 数组2
+     * @return 数组1与数组2的中间值
      */
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         // 总长度 = 数组1的长度 + 数组2的长度
@@ -29,7 +29,7 @@ public class FindMedianInTwoArrays {
         }
     }
     // return the k-th smallest item in two sorted arrays, each from index Lo to length-1
-// e.g., given [1, 3] and [4, 6, 6], the 2nd smallest item is 3, the 3rd smallest is 4
+    // e.g., given [1, 3] and [4, 6, 6], the 2nd smallest item is 3, the 3rd smallest is 4
 
     /**
      *

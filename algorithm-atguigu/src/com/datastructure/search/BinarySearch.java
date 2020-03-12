@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @Author 李非凡
- * @Description: 二分（折半）查找
+ * @Description: 二分（折半）查找（递归实现）
  * 充分必要条件：数据在一个有序数组里，即使用二分查找的前提是该数组是有序的
  *
  * 二分查找的思路分析：
