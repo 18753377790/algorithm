@@ -3,11 +3,11 @@ package com.algorithm.geekbang.basic.string;
 /**
  * @Author 李非凡
  * @Description:
- * KMP算法
- * @Date 2019/10/15 22:07
+ * BF(BruteForce)算法
+ * @Date 2019/10/15 21:57
  * @Version 1.0
  */
-public class KMP {
+public class BruteForce {
 
     public static void main(String[] args) {
 

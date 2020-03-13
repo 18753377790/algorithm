@@ -3,11 +3,11 @@ package com.algorithm.geekbang.basic.string;
 /**
  * @Author 李非凡
  * @Description:
- * BM算法
- * @Date 2019/10/15 22:11
+ * KMP算法
+ * @Date 2019/10/15 22:07
  * @Version 1.0
  */
-public class BM {
+public class KnuthMorrisPratt {
 
     public static void main(String[] args) {
 

@@ -3,11 +3,11 @@ package com.algorithm.geekbang.basic.string;
 /**
  * @Author 李非凡
  * @Description:
- * BF(BruteForce)算法
- * @Date 2019/10/15 21:57
+ * BM算法
+ * @Date 2019/10/15 22:11
  * @Version 1.0
  */
-public class BF {
+public class BoyerMoore {
 
     public static void main(String[] args) {
 
