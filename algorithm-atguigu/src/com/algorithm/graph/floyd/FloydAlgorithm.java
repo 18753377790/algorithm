@@ -1,4 +1,4 @@
-package com.algorithm.graph.st;
+package com.algorithm.graph.floyd;
 
 /**
  * @Author 李非凡
@@ -7,4 +7,8 @@ package com.algorithm.graph.st;
  * @Version 1.0
  */
 public class FloydAlgorithm {
+
+    public static void main(String[] args) {
+
+    }
 }

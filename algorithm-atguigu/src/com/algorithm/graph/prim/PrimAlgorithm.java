@@ -1,4 +1,4 @@
-package com.algorithm.graph.mst;
+package com.algorithm.graph.prim;
 
 /**
  * @Author 李非凡
@@ -7,4 +7,8 @@ package com.algorithm.graph.mst;
  * @Version 1.0
  */
 public class PrimAlgorithm {
+
+    public static void main(String[] args) {
+
+    }
 }
