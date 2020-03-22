@@ -20,7 +20,15 @@ public class CalculateSquareRoot {
      * @return
      */
     private static double getSquareRoot(int n, double deltaThreshold, int maxTry) {
+        if (n <= 1) {
+            return -1.0;
+        }
 
+        double min = 1.0;
+        double max = (double)n;
+        for (int i = 0; i < maxTry; i++) {
+            
+        }
         return 0;
     }
 }

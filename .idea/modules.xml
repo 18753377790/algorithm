@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/algorithm-analysis/data-structures-and-algorithm-analysis.iml" filepath="$PROJECT_DIR$/algorithm-analysis/data-structures-and-algorithm-analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm-nowcoder/Introductory-programming-training/Introductory-programming-training.iml" filepath="$PROJECT_DIR$/algorithm-nowcoder/Introductory-programming-training/Introductory-programming-training.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm-atguigu/atguigu.iml" filepath="$PROJECT_DIR$/algorithm-atguigu/atguigu.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithm-geekbang/geekbang.iml" filepath="$PROJECT_DIR$/algorithm-geekbang/geekbang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm-nowcoder/huawei-exam-on-computer/huawei-exam-on-computer.iml" filepath="$PROJECT_DIR$/algorithm-nowcoder/huawei-exam-on-computer/huawei-exam-on-computer.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithm-interview/interview.iml" filepath="$PROJECT_DIR$/algorithm-interview/interview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm-nowcoder/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/algorithm-nowcoder/leetcode/leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithm-luban/luban.iml" filepath="$PROJECT_DIR$/algorithm-luban/luban.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithm-nowcoder/nowcoder.iml" filepath="$PROJECT_DIR$/algorithm-nowcoder/nowcoder.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithm-practice/practice.iml" filepath="$PROJECT_DIR$/algorithm-practice/practice.iml" />
