@@ -9,9 +9,9 @@ import java.util.List;
  * @Description: 赫（哈）夫曼树（最优二叉树）
  * 一、赫夫曼树介绍：
  * 1.给定n个权值作为n个叶子结点，构造一颗二叉树，若该树的带权路径长度（WPL）达到最小，
- *   称这样的树为最优二叉树。
+ * 称这样的树为最优二叉树。
  * 2.赫夫曼树是带权路径长度最短的树，权值较大的结点离根很近
- *
+ * <p>
  * 二、赫夫曼树的概念：
  * 1.路径：
  * 2.路径长度：
@@ -19,7 +19,7 @@ import java.util.List;
  * 4.带权路径长度：
  * 5.树的带权路径长度：树的带权路径长度规定为所有的叶子结点的带权路径长度之和，记为WPL，
  * 权值越大的结点离根结点越近的二叉树才是最优二叉树，即：WPL最小的就是赫夫曼树
- *
+ * <p>
  * 三、赫夫曼树创建思路
  * 1.
  * 2.
@@ -41,6 +41,7 @@ public class HuffmanTree {
 
     /**
      * 创建赫夫曼树的方法
+     *
      * @param array 需要创建成赫夫曼树的数组
      * @return 赫夫曼树的根结点
      */
@@ -90,6 +91,7 @@ public class HuffmanTree {
 
     /**
      * 前序遍历
+     *
      * @param root 根结点
      */
     public void preOrder(Node root) {
@@ -103,7 +105,7 @@ public class HuffmanTree {
             if (root.getRight() != null) {
                 preOrder(root.getRight());
             }
-        }else {
+        } else {
             System.out.println("赫夫曼树为空树");
         }
     }

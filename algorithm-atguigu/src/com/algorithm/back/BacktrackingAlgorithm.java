@@ -1,4 +1,4 @@
-package com.algorithm.backtrack;
+package com.algorithm.back;
 
 /**
  * @Author 李非凡

@@ -13,7 +13,7 @@ public class Graph {
     /**
      * 顶点数组
      */
-    private char[] vertex;
+    private char[] vertexes;
 
     /**
      * 邻接矩阵
@@ -27,11 +27,11 @@ public class Graph {
 
     /**
      * 构造器
-     * @param vertex
+     * @param vertexes
      * @param matrix
      */
-    public Graph(char[] vertex, int[][] matrix) {
-        this.vertex = vertex;
+    public Graph(char[] vertexes, int[][] matrix) {
+        this.vertexes = vertexes;
         this.matrix = matrix;
     }
 
@@ -56,10 +56,10 @@ public class Graph {
      * @param index 表示出发顶点对应的下标
      */
     public void dsj(int index) {
-        vv = new VisitedVertex(vertex.length, index);
+        vv = new VisitedVertex(vertexes.length, index);
         // 更新index顶点到周围顶点的距离和前驱顶点
         update(index);
-        for(int j = 1; j < vertex.length; j++) {
+        for(int j = 1; j < vertexes.length; j++) {
             // 选择并返回新的访问顶点
             index = vv.updateArr();
             // 更新index顶点到周围顶点的距离和前驱顶点

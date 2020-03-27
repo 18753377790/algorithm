@@ -9,8 +9,10 @@ package com.algorithm.practice;
  */
 public class Division {
 
+    private static final int NUM = 100;
+
     public static void main(String[] args) {
-        for (int i = 1; i <= 100 ; i++) {
+        for (int i = 1; i <= NUM ; i++) {
             if (i % 3 == 0 && i % 7 == 0){
                 System.out.println(i);
             }

@@ -1,4 +1,4 @@
-package com.math;
+package com.math.lesson3;
 
 /**
  * @Author 李非凡
@@ -15,8 +15,8 @@ public class KingEnjoyWheat {
 
     /**
      *
-     * @param grid
-     * @return
+     * @param grid 放到第几格
+     * @return 麦粒的总数
      */
     private static long getNumberOfWheat(int grid) {
         // 麦粒总数

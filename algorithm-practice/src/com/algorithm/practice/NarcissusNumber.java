@@ -15,7 +15,7 @@ public class NarcissusNumber {
             int b = i / 10 - 10 * a;
             int c = i - 100 * a - 10 * b;
 
-            if (i==a*a*a + b*b*b + c*c*c) {
+            if (i == a * a * a + b * b * b + c * c * c) {
                 System.out.println(i);
             }
         }

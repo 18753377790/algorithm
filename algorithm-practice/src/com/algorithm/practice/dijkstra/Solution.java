@@ -7,8 +7,7 @@ import java.util.Scanner;
 
 /**
  * @Author 靳君
- * @Description:
- *
+ * @Description: 导入usa.txt文件并调用迪杰斯特拉算法
  * @Date 2020/3/20 22:38
  * @Version 1.0
  */
@@ -63,8 +62,8 @@ public class Solution {
             str = str.trim();
             int[] code = Arrays.stream(str.split("\\s+")).filter(verge -> !"".equals(verge)).mapToInt(Integer::parseInt).toArray();
             double distinct = pointColl[code[0]].distinct(pointColl[code[1]]);
-            mMatrix.put(new Point(code[0],code[1]), distinct);
-            mMatrix.put(new Point(code[1],code[0]), distinct);
+            mMatrix.put(new Point(code[0], code[1]), distinct);
+            mMatrix.put(new Point(code[1], code[0]), distinct);
         }
 
         br.close();
@@ -106,7 +105,7 @@ public class Solution {
     }
 
     /**
-     *
+     * 逐行读取格式化
      * @param br
      * @return
      * @throws IOException

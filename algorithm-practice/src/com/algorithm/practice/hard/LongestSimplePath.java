@@ -1,4 +1,4 @@
-package com.algorithm.practice.basic;
+package com.algorithm.practice.hard;
 
 /**
  * @Author 李非凡

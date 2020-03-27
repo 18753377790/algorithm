@@ -21,6 +21,9 @@ public class MaxSubArray {
 
     }
 
+    /**
+     *
+     */
     private static void findMaxSubArraySum() {
         //sum为子数组的和
         int sum = 0;
@@ -33,12 +36,15 @@ public class MaxSubArray {
         int[] array = {-1, 2, -3, 12, -5, -1, 9, -2};
 
         for (int i = 0; i < array.length; i++) {
-            sum += array[i];//求和
-            if (sum < 0) {//如果当前求得总和为负数的话，就将其清零，并且开始位置从下一个位置开始
+            // 求和
+            sum += array[i];
+            // 如果当前求得总和为负数的话，就将其清零，并且开始位置从下一个位置开始
+            if (sum < 0) {
                 sum = 0;
                 startPos = i + 1;
             }
-            if (sum > max) {//如果求得总和大于之前的最大值的话，就将sum赋值给max，同时记录最后的位置
+            // 如果求得总和大于之前的最大值的话，就将sum赋值给max，同时记录最后的位置
+            if (sum > max) {
                 max = sum;
                 endPos = i + 1;
             }
