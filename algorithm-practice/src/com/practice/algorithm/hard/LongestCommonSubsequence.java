@@ -2,7 +2,7 @@ package com.practice.algorithm.hard;
 
 /**
  * @Author 李非凡
- * @Description:TODE
+ * @Description: 最长公共子序列
  * @Date 2020/3/8 23:34
  * @Version 1.0
  */
@@ -11,12 +11,12 @@ public class LongestCommonSubsequence {
     private static final int MAX_LEN = 50;
 
     public static void main(String[] args) {
-        String str1 = "ABCBDAB";
-        String str2 = "BDCABA";
+//        String str1 = "ABCBDAB";
+//        String str2 = "BDCABA";
 
         // 算法导论上222页的DNA的碱基序列匹配
-        // String str1 = {"ACCGGTCGAGTGCGCGGAAGCCGGCCGAA"};
-        // String str2 = {"GTCGTTCGGAATGCCGTTGCTCTGTAAA"};
+         String str1 = "ACCGGTCGAGTGCGCGGAAGCCGGCCGAA";
+         String str2 = "GTCGTTCGGAATGCCGTTGCTCTGTAAA";
 
         // 仅仅使用一个c表
         int[][] c = new int[MAX_LEN][MAX_LEN];

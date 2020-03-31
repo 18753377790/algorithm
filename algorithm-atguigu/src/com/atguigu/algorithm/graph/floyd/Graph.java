@@ -9,12 +9,12 @@ package com.atguigu.algorithm.graph.floyd;
 public class Graph {
 
     /**
-     *
+     * 顶点数组
      */
     private char[] vertexes;
 
     /**
-     *
+     * 邻接矩阵
      */
     private int[][] matrix;
 }
